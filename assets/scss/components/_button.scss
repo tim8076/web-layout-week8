@@ -1,0 +1,16 @@
+.btn.disabled {
+  color: $gray-60;
+  background-color: $gray-40;
+  border-color: $gray-40;
+}
+
+.btn-primary {
+  color: #fff;
+  &:hover {
+    background-color: $primary-120;
+  }
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+}
