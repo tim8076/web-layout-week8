@@ -1,0 +1,35 @@
+
+.cardCourse {
+  display: flex;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ECECEC;
+
+  &-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5rem;
+    border-radius: 12px;
+  }
+
+  &-title {
+    font-size: 1rem;
+  }
+
+  &-price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-price .discount-price {
+    font-size: 1rem;
+    color: $primary;
+    font-weight: 600;
+  }
+
+  &-price .origin-price {
+    font-size: 0.75rem;
+    color: #808080;
+    text-decoration: line-through;
+    text-align: right;
+  }
+}

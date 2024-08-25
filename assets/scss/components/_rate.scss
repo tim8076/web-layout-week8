@@ -1,0 +1,22 @@
+.rate {
+  display: flex;
+  align-items: center;
+  
+  .rate-star {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.25rem;
+  }
+
+  .rate-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 0.25rem;
+  }
+
+  .rate-count {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #808080;
+  }
+}
