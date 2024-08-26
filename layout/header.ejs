@@ -7,8 +7,8 @@
             <img src="../assets/images/logo.png" alt="main-logo.png" class="header__logo">
           </a>
           <div class="dropdown d-none d-lg-block position-static mx-6">
-            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"   data-bs-auto-close="outside" aria-expanded="false">
-              探索
+            <a class="dropdown-toggle-arrow-down" href="#" role="button" data-bs-toggle="dropdown"   data-bs-auto-close="outside" aria-expanded="false">
+            探索
             </a>
             <div class="header__menuList-desk dropdown-menu start-0 start-xl-15 top-110 p-0 border-0">
               <div class="d-flex">
@@ -16,7 +16,7 @@
                   <h3 class="title py-3 pe-3 ps-6 mb-2">探索全部</h3>
                   <ul class="list list-unstyled" data-desk-menu>
                     <li>
-                      <a href="#second-menu" class="list-item">
+                      <a href="#second-menu" class="dropdown-item">
                         音樂
                         <span class="material-symbols-outlined">chevron_right</span>
                       </a>
@@ -27,7 +27,7 @@
                   <h3 class="title py-3 pe-3 ps-6 mb-2">所有程式</h3>
                   <ul class="list list-unstyled" data-desk-sec-menu>
                     <li>
-                      <a href="#second-menu" class="list-item">
+                      <a href="#second-menu" class="dropdown-item">
                         音樂
                         <span class="material-symbols-outlined">chevron_right</span>
                       </a>
@@ -41,7 +41,12 @@
                   </div>
                   <ul class="course-list list-unstyled">
                     <li class="cardCourse mb-4">
-                      <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
                       <div>
                         <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
                         <div class="cardCourse-price mb-4">
@@ -68,7 +73,12 @@
                       </div>
                     </li>
                     <li class="cardCourse mb-4">
-                      <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
                       <div>
                         <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
                         <div class="cardCourse-price mb-4">
@@ -95,7 +105,12 @@
                       </div>
                     </li>
                     <li class="cardCourse mb-4">
-                      <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
                       <div>
                         <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
                         <div class="cardCourse-price mb-4">
@@ -138,25 +153,46 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-          <a href="#" class="py-2 px-3 me-lg-4">
-            <div class="position-relative">      
-              <span class="material-symbols-outlined">notifications</span>
-              <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
-                <span class="visually-hidden">New alerts</span>
-              </span>
-            </div>
-          </a>
+          <div class="dropdown-center dropdow-info me-lg-4">
+            <a href="#" data-bs-toggle="dropdown" class="py-2 px-3">
+              <div class="position-relative">  
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle <%= isLogin === 'true' ? '' : 'd-none' %>">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header text-end text-primary">
+                <p>
+                  <span class="material-symbols-rounded">check_circle</span>
+                  全部標記為已讀
+                </p>
+              </li>
+            </ul>
+          </div>
           <a href="#" class="py-2 px-3 me-lg-4">
             <div class="position-relative">      
               <span class="material-symbols-outlined">shopping_cart</span>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary
+                <%= isLogin === 'true' ? '' : 'd-none' %>">
                 2
                 <span class="visually-hidden">unread messages</span>
               </span>
             </div>
           </a>
-          <a href="#" class="btn btn-primary d-none d-lg-block">
+          <a href="#" class="btn btn-primary d-none
+            <%= isLogin === 'true' ? '' : 'd-lg-block' %>">
             登入/註冊
+          </a>
+          <a class="avatar d-none <%= isLogin === 'true' ? 'd-lg-flex' : '' %>"
+            href="#"
+            role="button"
+            aria-expanded="false">
+            <img class="avatar-img avatar-img-lg object-fit-cover mr-1"
+              src="../assets/images/avatar-1.png"
+              alt="avatar-1-img">
+            <p class="avatar-title avatar-title-bold">Kelly Hsu</p>
           </a>
           <a href="#phoneMenu" class="py-2 px-3 d-lg-none"  data-bs-toggle="offcanvas">    
             <span class="material-symbols-rounded">menu</span>
@@ -169,14 +205,14 @@
             <div class="offcanvas-body p-0">
               <ul class="list-unstyled" data-phone-menu>
                 <li>
-                  <a href="#second-menu" class="list-item">
+                  <a href="#second-menu" class="dropdown-item">
                     音樂
                     <span class="material-symbols-outlined">chevron_right</span>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="position-absoulute py-3">
+            <div class="position-absoulute py-3 <%= isLogin === 'true' ? 'd-none' : '' %>">
               <a href="#" class="btn btn-primary w-100">
                 登入/註冊
               </a>

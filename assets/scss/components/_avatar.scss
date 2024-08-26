@@ -9,9 +9,18 @@
     margin-right: 0.5rem;
   }
 
+  &-img-lg {
+    width: 44px;
+    height: 44px;
+  }
+
   &-title {
     color: $gray-80;
     font-size: 1rem;
     font-weight: 400;
+  }
+
+  &-title-bold {
+    font-weight: 600;
   }
 }

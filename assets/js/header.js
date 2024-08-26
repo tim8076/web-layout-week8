@@ -37,7 +37,7 @@ const renderPhoneMenu = () => {
   phoneMenuList.forEach(item => {
     str += `
     <li>
-      <a href="#second-menu" class="list-item" data-open-menu="2">
+      <a href="#second-menu" class="dropdown-item" data-open-menu="2">
         ${item}
         <span class="material-symbols-outlined">chevron_right</span>
       </a>
@@ -57,7 +57,7 @@ const renderPhoneSecondMenu = () => {
   phoneSecondMenuList.forEach(item => {
     str += `
     <li>
-      <a href="#second-menu" class="list-item" data-open-menu="2">
+      <a href="#second-menu" class="dropdown-item" data-open-menu="2">
         ${item}
       </a>
     </li>`
@@ -86,7 +86,7 @@ const renderDeskMenu = () => {
   phoneMenuList.forEach(item => {
     str += `
     <li>
-      <a href="#second-menu" class="list-item">
+      <a href="#second-menu" class="dropdown-item">
         ${item}
         <span class="material-symbols-outlined">chevron_right</span>
       </a>
@@ -101,7 +101,7 @@ const renderDeskSecMenu = () => {
   phoneSecondMenuList.forEach(item => {
     str += `
     <li>
-      <a href="#second-menu" class="list-item">
+      <a href="#second-menu" class="dropdown-item">
         ${item}
         <span class="material-symbols-outlined">chevron_right</span>
       </a>

@@ -7,9 +7,12 @@
     <title>index</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header', { isLogin: "false" }); -%>
+    <!-- 登入版 header 請用下面的 -->
+    <!-- <%- include('./layout/header', { isLogin: "true" }); -%> --> 
 
     <script type="module" src="../main.js"></script>
   </body>
