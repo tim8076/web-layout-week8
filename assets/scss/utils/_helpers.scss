@@ -3,3 +3,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #F0F6FF, #fff);
+}
+
+.title-deco {
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background-image: url('../images/deco/flower-1.png');
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+}

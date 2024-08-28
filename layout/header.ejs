@@ -153,8 +153,8 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-          <div class="dropdown-center dropdow-info me-lg-4">
-            <a href="#" data-bs-toggle="dropdown" class="py-2 px-3">
+          <div class="dropdown dropdow-info me-lg-4">
+            <a href="#" class="py-2 px-3" data-bs-toggle="dropdown">
               <div class="position-relative">  
                 <span class="material-symbols-outlined">notifications</span>
                 <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle <%= isLogin === 'true' ? '' : 'd-none' %>">
@@ -162,7 +162,7 @@
                 </span>
               </div>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu <%= isLogin === 'true' ? '' : 'd-none' %>">
               <li class="dropdown-header text-end text-primary">
                 <p>
                   <span class="material-symbols-rounded">check_circle</span>

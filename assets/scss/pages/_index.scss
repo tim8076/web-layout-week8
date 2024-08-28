@@ -1,3 +1,85 @@
-.index-title {
-  font-size: 100px;
+.index-banner {
+
+  &-img {
+    height: 400px;
+    @include media-breakpoint-up(md) {
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    @include media-breakpoint-up(xxl) {
+      height: 800px;
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      pointer-events: none;
+    }
+  }
+
+  .swiper-slide.swiper-slide-active {
+    &::before {
+      position: absolute;
+      inset: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+.index-funds {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -25%;
+    top: 0;
+    background-image: url('../images/deco/flower-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    @include media-breakpoint-up(lg) {
+      left: -10%;
+      width: 560px;
+      height: 560px;
+    }
+  }
+}
+
+.index-buy {
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: -12%;
+      top: 215px;
+      background-image: url('../images/deco/flower-3.png');
+      background-repeat: no-repeat;
+      width: 480px;
+      height: 480px;
+    }
+  }
+}
+
+.index-category {
+  @media (min-width: 1920px) {
+    &__container {
+      margin-left: -180px;
+      margin-right: -180px;
+    }
+  }
+}
+
+.index-teacher {
+  background-image: url('../images/deco/line-1.png');
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center center;
 }
