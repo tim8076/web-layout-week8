@@ -595,6 +595,7 @@ $border-radius-map: (
   5: var(--#{$prefix}border-radius-xxl),
   6: 100px,
   7: 2.5rem, //40px
+  8: 3rem,
   circle: 50%,
   pill: var(--#{$prefix}border-radius-pill)
 );

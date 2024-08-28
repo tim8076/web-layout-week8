@@ -1,4 +1,17 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  &__img {
+    width: 200px;
+    height: 32px;
+  }
+
+  &__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
