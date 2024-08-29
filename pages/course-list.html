@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  </head>
+  <body>
+    <%- include('./layout/header', { isLogin: "false" }); -%>
+    <main>
+      <section class="course-list-nav bg-gray-10 py-10 py-lg-20">
+        <div class="container">
+          <nav class="mb-4 mb-lg-10" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item position-relative z-index-1">
+                <a href="#">所有課程</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                程式課程
+              </li>
+            </ol>
+          </nav>
+          <h1 class="fs-3 fs-lg-1 mb-10">程式課程</h1>
+          <div class="position-relative pe-lg-16">
+            <div class="swiper swiper-course-nav">
+              <ul class="list-unstyled swiper-wrapper mb-0">
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-primary btn-sm fw-normal">所有程式</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">網頁開發</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">資料科學</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">行動版開發</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">程式語言</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">遊戲開發</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">資料庫設計與開發</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">軟體測試</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">軟體開發工具</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">無程式碼開發</a>
+                </li>
+                <li class="swiper-slide w-auto">
+                  <a href="#" class="btn btn-light btn-sm fw-normal">無程式碼開發</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-next swiper-button-next-nav d-none d-lg-flex align-items-center">
+              <span class="material-symbols-outlined text-gray-80">arrow_forward_ios</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-10 pb-lg-20">
+        <div class="container position-relative">
+          <ul class="nav border-bottom border-gray-40 mb-10 mb-lg-20">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">最熱門</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">最新課程</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">話題最高</a>
+            </li>
+          </ul>
+          <div class="swiper swiper-course-card">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="../assets/images/course-4.png"
+                      class="card-img-top"
+                      alt="course-4-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">創意寫作工坊：從靈感到出版的全過程</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="../assets/images/avatar-2.png"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">中文創作</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="../assets/images/course-5.png"
+                      class="card-img-top"
+                      alt="course-5-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">小白也會！從零開始學習 Python 程式設計</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="../assets/images/avatar-2.png"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="../assets/images/course-6.png"
+                      class="card-img-top"
+                      alt="course-6-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">全面掌握 JavaScript 開發技術</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="../assets/images/avatar-2.png"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="../assets/images/course-7.png"
+                      class="card-img-top"
+                      alt="course-7-img">
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">HTML & CSS 網頁設計基礎教程</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="../assets/images/avatar-2.png"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="../assets/images/course-8.png"
+                      class="card-img-top"
+                      alt="course-8-img">
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">更進一步！深入學習 Node.js 與後端開發</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="../assets/images/avatar-2.png"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev-course swiper-button-custom d-none d-xl-inline-block">
+            <span class="material-symbols-outlined fs-5">arrow_back</span>
+          </div>
+          <div class="swiper-button-next-course swiper-button-custom d-none d-xl-inline-block">
+            <span class="material-symbols-outlined fs-5">arrow_forward</span>
+          </div>
+        </div>
+      </section>
+      <section class="course-list-hot pb-10 pb-lg-20">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between mb-10">
+            <h2 class="fs-6 fs-lg-3">熱門主題</h2>
+            <div class="d-flex align-items-center">       
+              <div class="cursor-pointer text-primary-hover swiper-button-prev-hot d-flex align-items-center p-2 me-3">
+                <span class="material-symbols-outlined">arrow_back</span>
+              </div>
+              <div class="cursor-pointer text-primary-hover swiper-button-next-hot d-flex align-items-center p-2">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper swiper-hot">
+            <ul class="swiper-wrapper list-unstyled">
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">HTML 5</h3>
+                  <p>2,103 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">Javascript</h3>
+                  <p>891 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">Python</h3>
+                  <p>1,384 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">CSS 3</h3>
+                  <p>240 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">HTML 5</h3>
+                  <p>2,103 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">HTML 5</h3>
+                  <p>2,103 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">Javascript</h3>
+                  <p>891 個課程</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#" class="d-block bg-gray-40-hover transition-base py-6 text-center rounded-3 border border-gray-40">
+                  <h3 class="fs-6 fw-semibold mb-2">CSS 3</h3>
+                  <p>240 個課程</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-flex justify-content-center">
+            <div class="swiper-pagination swiper-pagination-hot position-static"></div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray-10 py-10 py-lg-20">
+        <div class="container">
+          <h2 class="fs-5 fs-lg-2 mb-10 text-center">程式頂尖講師</h2>
+          <ul class="row list-unstyled gy-4">
+            <li class="col-md-6 col-lg-3">
+              <div class="card cardTeacherImage position-relative">
+                <a href="#" class="stretched-link"></a>
+                <div class="overflow-hidden">
+                  <img src="../assets/images/teacher-4.png"
+                    class="card-img-top" alt="teacher-4-image">
+                </div>
+                <div class="cardTeacherImage-body text-center">
+                  <h3 class="cardTeacherImage-title mb-1">Devon Lane</h3>
+                  <p class="cardTeacherImage-text">資深全端工程師</p>
+                </div>
+                <div class="cardTeacherImage-footer">
+                  <p>3,394 個學生</p>
+                   <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6 col-lg-3">
+              <div class="card cardTeacherImage position-relative">
+                <a href="#" class="stretched-link"></a>
+                <div class="overflow-hidden">
+                  <img src="../assets/images/teacher-5.png"
+                    class="card-img-top" alt="teacher-5-image">
+                </div>
+                <div class="cardTeacherImage-body text-center">
+                  <h3 class="cardTeacherImage-title mb-1">Jenny Cooper</h3>
+                  <p class="cardTeacherImage-text">資深全端工程師</p>
+                </div>
+                <div class="cardTeacherImage-footer">
+                  <p>3,394 個學生</p>
+                   <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6 col-lg-3">
+              <div class="card cardTeacherImage position-relative">
+                <a href="#" class="stretched-link"></a>
+                <div class="overflow-hidden">
+                  <img src="../assets/images/teacher-6.png"
+                    class="card-img-top" alt="teacher-6-image">
+                </div>
+                <div class="cardTeacherImage-body text-center">
+                  <h3 class="cardTeacherImage-title mb-1">Johnny Khan</h3>
+                  <p class="cardTeacherImage-text">矽谷軟體工程師</p>
+                </div>
+                <div class="cardTeacherImage-footer">
+                  <p>3,394 個學生</p>
+                   <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6 col-lg-3">
+              <div class="card cardTeacherImage position-relative">
+                <a href="#" class="stretched-link"></a>
+                <div class="overflow-hidden">
+                  <img src="../assets/images/teacher-7.png"
+                    class="card-img-top" alt="teacher-7-image">
+                </div>
+                <div class="cardTeacherImage-body text-center">
+                  <h3 class="cardTeacherImage-title mb-1">Annie Lin</h3>
+                  <p class="cardTeacherImage-text">資深前端工程師</p>
+                </div>
+                <div class="cardTeacherImage-footer">
+                  <p>3,394 個學生</p>
+                   <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pt-10 pb-20 py-lg-20">
+        <div class="container">
+          <div class="d-lg-flex justify-content-lg-between mb-10">
+            <h2 class="fs-7 fs-md-5 fs-lg-3 text-center mb-3 mb-md-0">
+              查看 520 筆與「<span class="text-primary">程式開發</span>」的相關課程
+            </h2>
+            <ul class="nav-row justify-content-center">
+              <li class="nav-row-item">
+                <a href="#" class="nav-row-link">最新課程</a>
+              </li>
+              <li class="nav-row-item">
+                <a href="#" class="nav-row-link active">最高人氣</a>
+              </li>
+              <li class="nav-row-item">
+                <a href="#" class="nav-row-link">最低價格</a>
+              </li>
+            </ul>
+          </div>
+          <!-- 手機版卡片列表 -->
+          <ul class="list-unstyled mb-10 d-md-none" data-course-list-phone>
+            <li class="cardCourse mb-6">
+              <div class="position-relative me-2 flex-shrink-0">
+                <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+                <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                  8 折
+                </div>
+              </div>
+              <div>
+                <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
+                <div class="cardCourse-price mb-4">
+                  <div class="avatar">
+                    <img class="avatar-img object-fit-cover"
+                      src="../assets/images/avatar-2.png"
+                      alt="avatar-2-img">
+                    <h4 class="avatar-title">Kelly Hsu</h4>
+                  </div>
+                  <div>
+                    <p class="discount-price">NT$ 2,480</p>
+                    <p class="origin-price">NT$ 3,200</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="fs-8 text-gray-80">
+                    <p class="py-1 px-3">程式開發</p>
+                    <p>已有 420 位同學加入</p>
+                  </div>
+                  <div class="rate">
+                    <img src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- 桌機板卡片列表 -->
+          <ul class="row gy-6 list-unstyled mb-10 d-none d-md-flex" data-course-list-desk>
+            <li class="col-md-4 col-lg-4 col-xl-3">
+              <div class="card cardCourseBuy">
+                <a href="#" class="stretched-link"></a>
+                <div class="position-relative overflow-hidden">
+                  <img src="../assets/images/course-4.png"
+                    class="card-img-top"
+                    alt="course-4-img">
+                  <div class="position-absolute tag tag-alert fw-semibold">
+                    限時 8 折 🔥
+                  </div>
+                </div>
+                <div class="cardCourseBuy-body">
+                  <h2 class="cardCourseBuy-title mb-4">創意寫作工坊：從靈感到出版的全過程</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="avatar mb-6">
+                      <img class="avatar-img object-fit-cover"
+                        src="../assets/images/avatar-2.png"
+                        alt="avatar-2-img">
+                      <h3 class="avatar-title">Kelly Hsu</h3>
+                    </div>
+                    <div class="cardCourseBuy-price">
+                      <p class="price">NT$ 2,480</p>
+                      <p class="discount">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardCourseBuy-footer">
+                  <div>
+                    <p class="tag tag-gray mb-1 py-1">中文創作</p>
+                    <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                  </div>
+                  <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4 col-lg-4 col-xl-3">
+              <div class="card cardCourseBuy">
+                <a href="#" class="stretched-link"></a>
+                <div class="position-relative overflow-hidden">
+                  <img src="../assets/images/course-5.png"
+                    class="card-img-top"
+                    alt="course-5-img">
+                  <div class="position-absolute tag tag-alert fw-semibold">
+                    限時 8 折 🔥
+                  </div>
+                </div>
+                <div class="cardCourseBuy-body">
+                  <h2 class="cardCourseBuy-title mb-4">小白也會！從零開始學習 Python 程式設計</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="avatar mb-6">
+                      <img class="avatar-img object-fit-cover"
+                        src="../assets/images/avatar-2.png"
+                        alt="avatar-2-img">
+                      <h3 class="avatar-title">Kelly Hsu</h3>
+                    </div>
+                    <div class="cardCourseBuy-price">
+                      <p class="price">NT$ 2,480</p>
+                      <p class="discount">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardCourseBuy-footer">
+                  <div>
+                    <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                    <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                  </div>
+                  <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4 col-lg-4 col-xl-3">
+              <div class="card cardCourseBuy">
+                <a href="#" class="stretched-link"></a>
+                <div class="position-relative overflow-hidden">
+                  <img src="../assets/images/course-6.png"
+                    class="card-img-top"
+                    alt="course-6-img">
+                  <div class="position-absolute tag tag-alert fw-semibold">
+                    限時 8 折 🔥
+                  </div>
+                </div>
+                <div class="cardCourseBuy-body">
+                  <h2 class="cardCourseBuy-title mb-4">全面掌握 JavaScript 開發技術</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="avatar mb-6">
+                      <img class="avatar-img object-fit-cover"
+                        src="../assets/images/avatar-2.png"
+                        alt="avatar-2-img">
+                      <h3 class="avatar-title">Kelly Hsu</h3>
+                    </div>
+                    <div class="cardCourseBuy-price">
+                      <p class="price">NT$ 2,480</p>
+                      <p class="discount">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardCourseBuy-footer">
+                  <div>
+                    <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                    <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                  </div>
+                  <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4 col-lg-4 col-xl-3">
+              <div class="card cardCourseBuy">
+                <a href="#" class="stretched-link"></a>
+                <div class="position-relative overflow-hidden">
+                  <img src="../assets/images/course-7.png"
+                    class="card-img-top"
+                    alt="course-7-img">
+                </div>
+                <div class="cardCourseBuy-body">
+                  <h2 class="cardCourseBuy-title mb-4">HTML & CSS 網頁設計基礎教程</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="avatar mb-6">
+                      <img class="avatar-img object-fit-cover"
+                        src="../assets/images/avatar-2.png"
+                        alt="avatar-2-img">
+                      <h3 class="avatar-title">Kelly Hsu</h3>
+                    </div>
+                    <div class="cardCourseBuy-price">
+                      <p class="price">NT$ 2,480</p>
+                      <p class="discount">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cardCourseBuy-footer">
+                  <div>
+                    <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                    <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                  </div>
+                  <div class="rate">
+                    <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+                    <p class="rate-text">4.0</p>
+                    <p class="rate-count">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <nav>
+            <ul class="pagination gap-2 mb-0 justify-content-center justify-content-lg-end">
+              <li class="page-item disabled">
+                <a class="page-link fs-5" href="#">&laquo;</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link fs-5" href="#">&lt;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link active" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">10</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link fs-5" href="#">&gt;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link fs-5" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="index-category py-10 py-lg-30">
+        <div class="container">
+          <div class="index-category__container py-20 px-4 bg-primary rounded-7">
+            <div class="container-xxl">
+              <div class="row flex-lg-row-reverse align-items-lg-center justify-content-lg-between">
+                <div class="col-lg-5 mb-10 mb-lg-0">
+                  <div class="d-md-flex align-items-md-start">
+                    <img class="mb-1 mb-lg-0 me-lg-2 flex-shrink-0"
+                      src="../assets/images/deco/polygon-1.png" alt="polygon-1-img">
+                    <div>
+                      <h3 class="fs-1 text-light">想學什麼嗎？<br>一探究竟。</h3>
+                      <img src="../assets/images/deco/line-2.png" alt="line-2-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="swiper swiper-category">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 145.png"
+                              alt="megaphoneSimple-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">網路行銷</h3>
+                            <p class="cardCategory-text">342 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146.png"
+                              alt="Frame-146-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">拍攝剪輯</h3>
+                            <p class="cardCategory-text">563 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146-1.png"
+                              alt="Frame-146-1-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">自我成長</h3>
+                            <p class="cardCategory-text">490 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146-2.png"
+                              alt="Frame 146-2-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">藝術設計</h3>
+                            <p class="cardCategory-text">230 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146-3.png"
+                              alt="Frame 146-3-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">數據分析</h3>
+                            <p class="cardCategory-text">395 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146-4.png"
+                              alt="Frame 146-4-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">投資理財</h3>
+                            <p class="cardCategory-text">486 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 145-1.png"
+                              alt="Frame 145-1-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">音樂創作</h3>
+                            <p class="cardCategory-text">283 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="../assets/images/Frame 146-5.png"
+                              alt="Frame 146-5-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title">探索更多</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/course-list.js"></script>
+  </body>
+</html>

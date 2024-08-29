@@ -1,0 +1,42 @@
+.course-list-nav {
+  position: relative;
+  .swiper-button-next:after{
+    display: none;
+  }
+
+  background-image: url('../images/deco/flower-2.png'),
+                    url('../images/deco/polygon-2.png');
+  background-repeat: no-repeat;
+  background-position: right -58px top -4px,
+                       left 16px top 40px;
+  background-size: contain, auto;
+
+  @include media-breakpoint-up(xxl) {
+    background-image: url('../images/deco/flower-2.png'),
+                      url('../images/deco/polygon-2.png'),
+                      url('../images/deco/flower-2.png');
+    background-size: 560px, auto, 560px;
+    background-position: right 24px top 100px,
+                         left 80% top 40px,
+                         left -5% top 50%;
+    
+    &::before {
+      content: '';
+      background-image: url('../images/deco/polygon-2.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 20%;
+      left: 6%;
+      width: 44px;
+      height: 44px;
+      z-index: 0;
+    }
+  }
+}
+
+.course-list-hot {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+}

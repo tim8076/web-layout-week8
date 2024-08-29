@@ -181,3 +181,48 @@
     font-weight: 600;
   }
 }
+
+.cardTeacherImage {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid $gray-40;
+  .card-img-top {
+    height: 244px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 250ms ease;
+  }
+
+  &-body {
+    padding: 1rem;
+  }
+
+  &-title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &-text {
+    color: $gray-80;
+    font-size: 0.875rem;
+  }
+
+  &-footer {
+    border-top: 1px solid $gray-40;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      color: $gray-80;
+      font-size: 0.875rem;
+    }
+  }
+
+  &:hover {
+    .card-img-top {
+      transform: scale(1.1);
+    }
+  }
+}

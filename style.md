@@ -63,10 +63,12 @@ values: (
   0: 0,
   1: var(--#{$prefix}border-radius-sm),
   2: var(--#{$prefix}border-radius),
-  3: var(--#{$prefix}border-radius-lg),
+  3: var(--#{$prefix}border-radius-lg), //12px
   4: var(--#{$prefix}border-radius-xl),
   5: var(--#{$prefix}border-radius-xxl),
   6: 100px,
+  7: 2.5rem, //40px
+  8: 3rem,
   circle: 50%,
   pill: var(--#{$prefix}border-radius-pill)
 )

@@ -1,0 +1,15 @@
+.pagination {
+
+  .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+
+    @include media-breakpoint-up(md) {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
