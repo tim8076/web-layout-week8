@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/index-a9700b2b.js"></script>
+    <link rel="modulepreload" crossorigin href="/web-layout-training-vite/assets/main-f1ab3050.js">
+    <link rel="modulepreload" crossorigin href="/web-layout-training-vite/assets/grid-4a160750.js">
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-3363b65f.css">
+  </head>
+  <body>
+    <header class="header py-3 pt-lg-10 pb-lg-4">
+  <nav class="navbar navbar-expand-lg py-0">
+    <div class="container-lg">
+      <div class="header__inner d-flex justify-content-between align-items-center w-100 py-lg-4 px-lg-10">
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand py-0 me-2 me-xl-6 flex-shrink-0" href="index.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABACAYAAAA09iFXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA9MSURBVHgB7Z1NdhvFFsdvCxuM4Rz8VoBYAfYKnjwgNjDAXgHyBJw3wVmB5RU8M3kJ7w2irMDxgAMKA3dWYGcFaXaQdw4YQWw199/Vij8idVV3V7WqrPs7p+MkKrtLslT/urfuR0S7aUopvaIWJUR8pXTMX2N6FOHfjTMYDNIy4zc2NiISBEEQGqeV/RnRCgvHKl9b/K/HfL1kYTnhq0uCIAiCMIFWwWMdgpjsphCTNgmCIAjCNVoGY9qkLJJ9EgRBEIQcEwEZ06P76RHtpSskCIIgzD1lBISyM5I/6URERBAEQSgnIACH7UP6NwmCIAhzTXkBUXTZnbVHgiAIwtxSVUCIRrQv0VmCIAjzS3UBQe4IkURmCYIgzCnVBUTRlQN1QRCE+WSB6jIknIX0aF7ZTXuFj0d0Rg+jp+Tm3rAA2+SSJXpAh9ErcoFygeqtWJTa+SF6QC75hs/0WmRjM5S8uVyUA7qfbvHr8VXhmBZ9T/+JzsgGu2mH//xaM+rA9Ln+9NNP7Var1S0ac3Fx8fTLL780nv+zZ88ea4ac3bt373uyhMH9nvP9+uQQnsNqFEWdNE0/5Qt/b/PXG+9f/r9X/H8JqffjC37d488++ywmi9QXEPXm6tH8UrwAptTnP90IiKoW0CGXDHlxIHIjIOp9o1ucIMJYyI55kYrJFS36jmyL8W724Y35emJt7oiChOWvH7NGdmhr74fnpxYp059X+JlZXFxM+IuxgPAi2dWN+eWXX17YWjx19+OFG1/6ZJmjo6OVDz/88LvRaNTlOUAwrs/prfG5oKzm1xZ/3/5gMEh4fvHl5eXB559/nlBN6rqwQFsO04WK/LPE2C0KjzapxfckKwn0TdrMc4CA6CzjOYMXz8dYgClAMG8WwP0PPvjgJT+PHtXb6EB4umyNvIQlBYuQamBDQECHBKEMyjXSNh6fGlgqftPmT9sRP+/HDZ0b7tO/0lUSxrR59x5c0A8v8t+NheO2i6ouYyGBOFFF7AhIREEquzBTumUGZ+8xJTqh02W34GkjVvtIEn6vw4vwHi+WHQoAWB0sHie8yB/aFo7bQJzYtfWyijViR0BSxwe5wt1DdxA8mdCtkDFtFsQm6sp1JOH3JiG4srCQLy8vn7JwdKg5ENxwUlZEbLmwPiJBMAV9ZqpYrajFdlfCxnFO8UcDeVSS8Hsbr11ZeZTaCdFMNuWlRcRGFJbgKwh/jahe+OKSkwisaofJEJ1h9r19ap6EVETVZFKe27gxm6k4RrTH5xRPrIXcTr4H5oKw03USMnJX1rHtkNa6wDKyIB5J/rVN1chEhOeytr29rf3shy4grsJL7wYRvz6Poh75hNoNV3FfjYEbq0/Ng7yOHaOR6qwGi3ZbOzbNrJBtcotyZT2MDknIyF1ZRotkU7DbCr+ftul45Hnw83iCsFz+enY7LDe3ZrIQXirn/h1badrcK1surJnAL5y7nZvgig7Vo+O9Gws5H4+iT0jlRxQzauj5iCvrNjhn8OZ8iA/Mu2S4yOfCcfD7779/srm5ubexsfF0Uk4H/g+P8dXl8WbvxxzTgIOgBYSf5DEJoVH8IUkNrMo/S0ZwzYoldlHpng9cTOcNhMFfubKEK/Z//PHHmYc6w1LgA3PTc5nk8vJyjcWhV8Z6ysWky99rXNHBZE5BCwg/QVcZ3oIL1A64UzgmyszmuHBMWssF1hwoAWNyBtWiphYxicq6xcLCwsxFld1M2FS1deN4vXtxfn6+VieD/IsvvjjkjbeRKxZRYDorJFgBYTOubyMVX2iQkdHheczXc82YTjDumJFRSY6PqSnElXWb1cFg0KMZcXJyAsuwazA04QV9y8aZDa+bff5ZRsE1bLEUfmaDPESHDxC1XEgIC1Vvqog4K8q3m/ZJX2SxSyHUYGuZ13RqBInKmgRcWaUKONri9evXWKDbunGwGmxumN97773eX3/9ZSJGhWOCFBAcIIn1ERgoqzHSflDUIZ8SkZiK3V1hFPFEhd8RNUtKT1koinaO8xaVhUilr4oyuhcXF5G1PwtR1R6c596WmCyyvr4OYehRTUJ0YR1sbm5KOGJojMjE9x5fG68LkGgHUdrkwigs8/9klx7pquPOlysrubi4KPRYwN//888/N3o+BPeVSba5z96WYAQkr23/YGNjo0dCiOgq78Y3ekosG+V6VEtIbJKW0Rztuk6iTJB2NGPmKioLh8fIlygaw4/v161OWwZ2IXV0Y5Cq4LO3JQgByevXr4nlEShmlXdvxqirJlZx4Xf4XqFX7fBNStbHZBvVf0R3UNrJGlTNCbyG6KKPVt55550mRVUbfcebZq9TFXw9A0HTE8Q7Px8Oh4c+ZYsGRZpVsD2hKox48fmvtU6KXe2IpQlNt+DGahWcg4wr9LpsNFUVJAcODbLRU7Y+fnDQuRAssStrmIU8t6eOGRHKy8fOuk56BHbybGEctFqtqQEaY1dWE5vVvJNg4Rh0ESSP8U5A2EUVkWAH5aboUBVa5lmrWpC3UfxbPZ64gMGNNdSUJI+yyK6YfEEJx6qReIC6tcqKwGu6m2LXfVJw/xX6M5ur63IqXoAEvMFgAFGduvvPXVlPXbuOWBw+mtRJ8Dp8dpOQAXC9sfXUIUdMa9ErxRQFt+xm7T91pTomWzpqAYypSATHpUBc76BVl79iaw6L8R9ZqXbT0iSor9Unl8A6281i/qeHUKPKMVxZD61ZnF7DArHDC/dpwZCxK8tpVBba0urGlBAxZLO7dL/1J/1n0JnoQhAU+9jTrOBjf+rjumgstYPukmuurLnpV5lKvIpmwkaXjKKyHt+ZUvkaeDd9hlSAojGziMoKEREQwR0mlXcjKt71wo2lqycVSmmTm+zciDpzibLO9FFZTfQn8QS4skgT/dZ0VFaIiIAILuloR+gsDFVPShfm6n+F3jGqR8u2c9fVbUyistCf5G60DTaCrRBdYcGmo7KCQwREcIkuzDYxjPTSH+iHUaE35kV6bWZnDSauLJofVxayu3U1oVy6shBpqhvjuwUkAnK3Sfj6pNK1RPUWOZPKu6bRU5hLqG4sNW8sUutsBaw35raahIkrC5Fjc+TKQk0o0oiqK1cWi9OvujF5QyhvkSisu86sFixU3tVvT8xChVU0Fir0FolEJ6u35ao9rHI9nb11Tx2wOGYpGrcxicpSrqxjL/NrLIOaUCwOO3kr2Wk4icpiATljcdJZ6RAQ7WZuaWnpbDgcVpofz2EPtcKoAiIgghv0lXeTkgsUEruK3+SqXLwbAYF4wIK4zv30NIu8Ksa/yrdwZf3B7sXiiDG4stZoSHceuLLYTfU9L6JT37NwZQ0Ggy10+CNL5AJSOIYfN6lkMC6OGFMFnj17tq/JR5lq/YuACPYxq7wLN1ePzNH75dNMtHrUFGnW/EqX6d/xLlseFt036Q4LyFHBKOXKiugFzQF5efPirH0W1aOjo5gsAauB71k4BsKFromuSs3n3RA7VDyHqf15REAE+5hV3m0TWfa1N13aRLmDYtK7stRu3qdyIQhe+DYtLvseZb/HPs0Bpq6s5eVla1FZuCfv/mPdAr64uIiNkVEXwbLw8+3pxhR1fpVDdMEFRma3I7aoWUw+2G12BfmXlPY+z13fg75Lc4JJVBZZfn+NRiNtsUSeU1fXWrYKsD4Mzz7iaQ+IgAh2Mau8646mK/SqA3J9PSu413zrvwGLKHWzsw0Vk6gsy/fro1WFbhwLDdxnVsOrYX0UNdkCutbhIiCCbbo0S8ZurCbBobRuJ495RZrCkLMArqy0Zsj2HQJuJbSPpYbA/S4vL00KarbZfXZiS0QGgwHcx9rNlq6ZlQiIYBcf8jEibQSYXVS2vIkVsuVlpndEDwxcWXODoSvLGnyYfmhihTCrLCKndXNScvHo6cbprA8gAiLYA5V3yxUTdMNoBqVNlrIw40Q7zkcrBG64Fh2Q8IYmXVmwQliwTK2eNrueTvlMZL+sNYJzFD60R5BAz2B4YtJK11YUFkIVZ1Mz5lEkPlx/MDlgxJsyoTqo/iJF0UPjCr2H1BQqNPYBL8RHheOQN3I/3aOHUXNzMwHz2U1hPXZIMI3KsgbyS3S5KNdYYTdbj62RLqK4+Hue/Pbbb2eTGu9d6xPyNX9PhwxBtWKTUvK2BKRNs/N9+y0gVX3yLXYp1M2qVh0Je1QH7KxNwk9NKu+q5MEe1WU3TUhfJh5zaXaRxnmCSVjviPbZQup72AUQUVmnXliRHmCSYGiTPBcFEYy65NQxyOHo4mIxQUIgLJk37yme9woOyXVNqyYA8eibDAw9DyQh30mzha586N8oC52rl8GsFoJ6uRbDLA/AZKHrGIyx098Z+Rffpq80C10zjabe5oB0r8VV6XRdNdhmgSvrfnrA71n/3GwzwjDB0Aq51bOdWz1tKkkeUbVy7d9UgQO2hnqmg0M/A0lI8AV9+GzLYlJa5GmFXpXEqJ+br6XTlWstJiGj6agsuI34ftg4JtQ8pcQDhC4gc1FmwXvMKu8mlgsd6kNPZxcR1jOMavK16u2ORGVdAVcWWwWNhTpDRN599921piLBEAHG93pQVjxA6AIi8es+MDJw0ZmEuZYBO339IteZyS4friCz59vJe8b7hURlvcXCwsKOYaitFWD5bG5u7uXWT0KO4OcU43Z8r0rnhSELSDIP5aaDoGWQd+EiWc10kZ4FCD4w2cXjvMHHBk7iyrpByVBba+AwGy6tvId7QpaAGEKc7t27t44e8VSRcAVEsmf9wKR0SZqVQk/IPrF2RNpwUuEYlVyoPyTHgbqPdbIU4sq6BkJtm3RljYFLCz3ccyHZya2GSuTfu82i8Q/TSKsiQo3CSqy7RKrTJzdou5Vl/cRbjg/blgxKdKSa16BlKfrqNlfNkT6aOgbtFnBGoxew48KfY/L7oLfm18/Phz7WjNQ9fgX6kuhe7yVLiz5es90UIlhcHLNV6n4JMpyLBlxeXiZUAt3Pu7i4sHb2BlfW69evC58vz/85OSDPy+jjQn4HuhWiki9//XQcgYXQXYwdh/PyY2c8n18hHOfn5/GkXJE6RPwGqRTrNWMOrOQTCIIgCJUJ0YWViHgIgiDMntAEJCHf2oMKgiDMKeGcgeAwb0Tb9D8nh7GCIAhCScKwQJR4rLN42ExEEwRBEGoQgoC84KP+NREPQRAEv/DXhQWrA6G6cmAuCILgJf4JyFg43jcsIy4IgiDMBB8EJMkylaMsUesp/SDlSQRBEELgbxEGTYX78BUxAAAAAElFTkSuQmCC" alt="main-logo.png" class="header__logo">
+          </a>
+          <div class="dropdown d-none d-lg-block position-static mx-6">
+            <a class="dropdown-toggle-arrow-down" href="#" role="button" data-bs-toggle="dropdown"   data-bs-auto-close="outside" aria-expanded="false">
+            探索
+            </a>
+            <div class="header__menuList-desk dropdown-menu start-0 start-xl-15 top-110 p-0 border-0">
+              <div class="d-flex">
+                <div class="bg-gray-40 p-3 section">
+                  <h3 class="title py-3 pe-3 ps-6 mb-2">探索全部</h3>
+                  <ul class="list list-unstyled" data-desk-menu>
+                    <li>
+                      <a href="#second-menu" class="dropdown-item">
+                        音樂
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-3 section">
+                  <h3 class="title py-3 pe-3 ps-6 mb-2">所有程式</h3>
+                  <ul class="list list-unstyled" data-desk-sec-menu>
+                    <li>
+                      <a href="#second-menu" class="dropdown-item">
+                        音樂
+                        <span class="material-symbols-outlined">chevron_right</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="py-3 px-6 section">
+                  <div class="d-flex align-items-center pb-4 border-bottom mb-4">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR0SURBVHgB7ZlBbxNHFMf/Y+wlLZHqVKooFVE3XBoOFPcW91JzaC89NJag5dZw7An6CeJ8A/IJ4p5aiVQOx4pWdi8EqYckRUicYEEcQEJKgABxHHaYN+sE7+7M7qx3F0uIn2TZ+2Z3/N6892bezALv0cNnztZ49VybV3+cRU4UkQO8NlvGrrUkfnmKcywiJzI3gH99roIuWmDcPhAyXkZOZGqAVB5ogyE3hYMUkBF85rwNUh4q5d0KciITA6Ty7JVGebqhcBo5kY0H2F5DhI2tb0dNJnYOpDZAxP0cGPs59sZucQ4G8L9XlnzXwvAo49N7gGPe6D7GLsZ29c/VedGfP1+6pTXsltq6Z1IZ4I1+ROj4sXn1p0vavv5qzcLlDXC+qOi/ovNCOg+Yjv4+zJ0XithQayJGnv/Kvqs3Zdc0MQz237Vqyi4xJHJ0gCUkx4HVO8M6K462b7mSlzri58DsxRfY9eVG8N7hPcAQG9MabIrp/gCEoPoprLz8w4pajSHor7hrSI8jPlfFOuGIdaQMzr6hKVd3L7t+ZSooHM6A6tmm0dSZNVZvQoTe1qBoyBASIzUaQjNRYgNkjJpPndnStUJ5kNwDDHMYFYqyXFtO96eydn/KG4i7kYWPYGCP0UfvgZ0iuauCnnWwmIw0fAjGPg+K9AYUmC2/Ob8kFZcdjDB8NETsyMhd/Vm2wGjhWQeQ28bECDfs/SRJPFrlNWS2pTRmrOR9MiKXY5VILnwLfDoBdP4XO+ibSMvb9cCY5SlP1L4EzpxCWiIMYA6yZuqo/5qMsI/CGIYnQZHegEPuFrLmi+NhWRIvMGwGRXoDeqV1ZM2UYrTJA6Ze4PxeUKQ1gN34wxFfybwQNbucnBS15BFN23EYwQuhQY1OYg5zL5Byv3yvD4nTU/pnpydhBA+Htc8A3m7ZvlbmbsAUSkgyQhUOxyY8D+xTFJ46PPbmmp6bOII42I3lTlDm98AeGvxaq3Zw7bIVmEAKfHXC+00GDHqB2s4HCtjxcbG7svyyj8YRCUdHJS6GbmKyZJA3k8WiBiK3RR8L2prpceu59x2M/Q8/AJ4+9cvIAw70aKLB5wF5JrONpv8WHv9yYlqRhKR45YQ6cTfFmGxvIxG9QlMlDiUxq9f9iWLtXUYcxz5GIl6+QEIc9t8V5YQSW0p4uzE32gvl+ASM5eVuVOuCrsGsFrJeNaBbE8YsZALlixo6D2rqGo0MkF7gXD0KO7tIDfXxcFPXuhD1qHE1ylaXLwsjfoNOgTTcfqBpcBejRp9IVk4f3qPj8XAyPUxZ963dUUk3+qEbSSIDZCi5h+oIGuE8wtBQ6ISfF8r3asFjRBWJNzSyyBNnRb6ZafX2cGG00wN+/9cvozA1VF7qgxTII3J6CUFnRbRo1avmD5PyS9cGk9cRb2guqOqdKFIZsE//rP8iZqYrqE7HrwsUMq1Vb+qUNY5I1tU/zequAJkYsI98LXTqsxomP/kB1ZNl3yne42fi82QLt+472LhLG5N1ESorpqHyzvIazfJhQAXu8d0AAAAASUVORK5CYII=" alt="icon-fire" width="24" height="24" class="me-2">
+                    <h3 class="fs-7">熱門網頁前端課程</h3>
+                  </div>
+                  <ul class="course-list list-unstyled">
+                    <li class="cardCourse mb-4">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="/web-layout-training-vite/assets/course-5-18abd620.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
+                        <div class="cardCourse-price mb-4">
+                          <div class="avatar">
+                            <img class="avatar-img object-fit-cover" src="data:image/png;base64,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" alt="avatar-2-img">
+                            <h4 class="avatar-title">Kelly Hsu</h4>
+                          </div>
+                          <div>
+                            <p class="discount-price">NT$ 2,480</p>
+                            <p class="origin-price">NT$ 3,200</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="fs-8 text-gray-80">
+                            <p class="py-1 px-3">程式開發</p>
+                            <p>已有 420 位同學加入</p>
+                          </div>
+                          <div class="rate">
+                            <img src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                            <p class="rate-text">4.0</p>
+                            <p class="rate-count">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="cardCourse mb-4">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="/web-layout-training-vite/assets/course-5-18abd620.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
+                        <div class="cardCourse-price mb-4">
+                          <div class="avatar">
+                            <img class="avatar-img object-fit-cover" src="data:image/png;base64,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" alt="avatar-2-img">
+                            <h4 class="avatar-title">Kelly Hsu</h4>
+                          </div>
+                          <div>
+                            <p class="discount-price">NT$ 2,480</p>
+                            <p class="origin-price">NT$ 3,200</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="fs-8 text-gray-80">
+                            <p class="py-1 px-3">程式開發</p>
+                            <p>已有 420 位同學加入</p>
+                          </div>
+                          <div class="rate">
+                            <img src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                            <p class="rate-text">4.0</p>
+                            <p class="rate-count">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="cardCourse mb-4">
+                      <div class="position-relative me-2 flex-shrink-0">
+                        <img class="cardCourse-img object-fit-cover" src="/web-layout-training-vite/assets/course-5-18abd620.png" alt="course-5-img">
+                        <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
+                          8 折
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="cardCourse-title mb-4">小白也會！從零開始學習 Python 程式設計</h3>
+                        <div class="cardCourse-price mb-4">
+                          <div class="avatar">
+                            <img class="avatar-img object-fit-cover" src="data:image/png;base64,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" alt="avatar-2-img">
+                            <h4 class="avatar-title">Kelly Hsu</h4>
+                          </div>
+                          <div>
+                            <p class="discount-price">NT$ 2,480</p>
+                            <p class="origin-price">NT$ 3,200</p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="fs-8 text-gray-80">
+                            <p class="py-1 px-3">程式開發</p>
+                            <p>已有 420 位同學加入</p>
+                          </div>
+                          <div class="rate">
+                            <img src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                            <p class="rate-text">4.0</p>
+                            <p class="rate-count">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__search position-relative d-none d-lg-block">
+            <label for="nav-search" class="position-absolute top-50 translate-middle-y">
+              <span class="material-symbols-outlined">search</span>
+            </label>
+            <input type="text" id="nav-search" class="form-control ps-10 d-none d-lg-block"
+              placeholder="搜尋各種音樂、數學、程式及設計課程">
+            <button class="btn btn-primary btn-sm position-absolute top-50 translate-middle-y">
+              搜尋
+            </button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="dropdown dropdow-info me-lg-4">
+            <a href="#" class="py-2 px-3 d-block" data-bs-toggle="dropdown">
+              <div class="position-relative">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle d-none">
+                  <span class="visually-hidden">New alerts</span>
+                </span>
+              </div>
+            </a>
+            <ul class="dropdown-menu d-none">
+              <li class="dropdown-header text-end text-primary">
+                <p>
+                  <span class="material-symbols-rounded">check_circle</span>
+                  全部標記為已讀
+                </p>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="py-2 px-3 me-lg-4">
+            <div class="position-relative">      
+              <span class="material-symbols-outlined">shopping_cart</span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary
+                d-none">
+                2
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </div>
+          </a>
+          <a href="#" class="btn btn-primary d-none
+            d-lg-block">
+            登入/註冊
+          </a>
+          <a class="avatar d-none "
+            href="#"
+            role="button"
+            aria-expanded="false">
+            <img class="avatar-img avatar-img-lg object-fit-cover mr-1"
+              src="/web-layout-training-vite/assets/avatar-1-cf59f6fa.png"
+              alt="avatar-1-img">
+            <p class="avatar-title avatar-title-bold">Kelly Hsu</p>
+          </a>
+          <a href="#phoneMenu" class="py-2 px-3 d-lg-none"  data-bs-toggle="offcanvas">    
+            <span class="material-symbols-rounded">menu</span>
+          </a>
+          <div class="header__menuList-phone d-lg-none offcanvas offcanvas-start pt-4 px-6" tabindex="-1" id="phoneMenu" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header py-3 pe-3 ps-6 mb-2" data-phone-header>
+              <h3 class="offcanvas-title title">探索全部</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+              <ul class="list-unstyled" data-phone-menu>
+                <li>
+                  <a href="#second-menu" class="dropdown-item">
+                    音樂
+                    <span class="material-symbols-outlined">chevron_right</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="position-absoulute py-3 ">
+              <a href="#" class="btn btn-primary w-100">
+                登入/註冊
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="index-banner swiper swiper-banner mb-lg-18">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-2-3fb3541f.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-3-0ad73030.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                健康廚房：營養均衡的素食料理指南
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-4-af576b65.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                掌握商業攝影：打造你的專業攝影事業
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-2-3fb3541f.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                給成人的鋼琴入門課，一小時教你彈奏上手！
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-3-0ad73030.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                健康廚房：營養均衡的素食料理指南
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="index-banner-img bg-cover d-flex flex-column justify-content-end align-items-start"
+            style="background-image: url('/web-layout-training-vite/assets/hero-4-af576b65.png');">
+            <div class="mx-4 ms-lg-10 mb-lg-8 d-flex align-items-center py-2 ps-2 pe-6 rounded-6 bg-light mb-12">
+              <p class="fs-8 py-2 px-3 rounded-6 bg-primary-10 text-primary fw-semibold me-2 flex-shrink-0">
+                熱銷課程🔥
+              </p>
+              <h3 class="fs-8 fs-lg-6">
+                掌握商業攝影：打造你的專業攝影事業
+              </h3>
+            </div>
+            <h3 class="w-100 bg-primary text-light fs-8 d-flex align-items-center justify-content-center py-4
+              py-xl-8 fs-xl-2 w-xl-fit-content ps-xl-30 pe-xl-20 rounded-top-end-lg-6">
+              探索感興趣的課程，今天立即上課
+              <span class="material-symbols-outlined fs-7 ms-4 fs-xl-2">arrow_forward</span>
+            </h3>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination-banner swiper-pagination-custom d-lg-none
+        position-absolute bottom-65p start-50 translate-middle-x z-1 d-flex justify-content-center"></div>
+      <div class="swiper-button-prev-banner swiper-button-custom d-none d-lg-inline-block">
+        <span class="material-symbols-outlined fs-5">arrow_back</span>
+      </div>
+      <div class="swiper-button-next-banner swiper-button-custom d-none d-lg-inline-block">
+        <span class="material-symbols-outlined fs-5">arrow_forward</span>
+      </div>
+    </div>
+    <main>
+      <section class="index-funds py-20 py-lg-30">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <h1 class="mb-2">火熱募資課程</h1>
+              <p class="fs-6 fs-lg-7 mb-6 mb-lg-10">現在購買最優惠✨</p>
+              <ul class="list-unstyled overflow-x-scroll overflow-x-lg-visible d-flex flex-lg-wrap
+                mb-6 mb-lg-10">
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-primary btn-sm">全部</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">🍽️ 烹飪料理</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">📊 數據分析</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">🎼 音樂製作</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">📝 創意寫作</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">💬 語言學習</a>
+                </li>
+                <li class="flex-shrink-0 me-2 me-lg-3 mb-lg-3">
+                  <a href="#" class="btn btn-light btn-sm">🖌️ 藝術創作</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-none d-lg-inline-block mb-lg-6">更多募資課程</a>
+            </div>
+            <div class="col-xl-8">
+              <div class="swiper swiper-funds mb-6">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card cardFunds">
+                      <a href="#" class="stretched-link"></a>
+                      <div class="position-relative overflow-hidden">
+                        <img src="/web-layout-training-vite/assets/course-4-e273136f.png"
+                          class="card-img-top"
+                          alt="course-4">
+                        <div class="tag tag-primary fw-semibold">
+                          優惠倒數 10 天
+                        </div>
+                      </div>
+                      <div class="cardFunds-body">
+                        <h2 class="cardFunds-title mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
+                        <div class="avatar mb-6">
+                          <img class="avatar-img avatar-img-lg object-fit-cover"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAo/SURBVHgBlVdZbFzlFf7uOndWT+LdCfYkgUIIBVMIBVoJVxVqhSpAbaW+UNWoG1WLYlQe0oc29kNVpCIRWvGAVJWASou6EdpKBbE0YSnElBKHxIEE25M4nrE99sx49rv3+/8hKSFhybWu79yZ//7nO+c75zvnKrjAI3zyrgwQDAdakEGopn/17CxiV99evuEz27MX9fUcXNe/KXsB20H/JIvCJ0fTUPUdIZTRUAkzUBQooQao3EBVYTs2EnGTK32sLb6bDYCnEGq7PwmYjwQQ/mE0E0S08VDVviWMQlERKvIX2E0bJ5ZqiBhRxIwQqhJCUzXxW0YNwx1Qgh1rSzN7gkCd+Cggyoca//PojkBVxxVVTYeaRvta23gY4J/7p/H7V06hBgsX9XXiyq0ZDF9zLXo3b0PMisKulhgdFWY8hUiyu1zKzUxs2n7L7vPZ0c7v+R27AlW5D6pmKRqDpKl0nvFWFTz8x1fw0NPHUbBVWKaOIAzRsl0cffttLJ6cQUKxUc7P48TU6/C9Fjr6hqyZqde+fMetN+Oxvc/u/1gA4WPfeCDQ1J2g1+IUhhVeQ4J49qUjuP/JKRQaAUxdRSxiYuvGPgwPbcBgdzcipopoVIdFWgLXRqpngAAG4Xke99FGvjScSf/puQPPvN/eWTlgP/zVXb4fjCnG/xkKlTZLdr2BX//lDZSaAVNNga4puG37Vbjhiq3o3DCIWCKKlZUcDkwfwfpEHFGZEwqBOFidPYpSYRl2ozZ2Yur58tBVX5w4bUE9/aH6wFdGAt8bR8jtGVaZHSLvlPaHf02+i7liEy03QNTUsKWvB5nuXnqcYoFEoVkd6BsYhBaqmF3IQ+yjimdDD77TgNOqnE7U8aMv/X3kHAAe3Ef8wGOOsYjo43sBaEfAc/H8G7NwPMGRgrhlYLC3By2fT/kudwmxvFpAbrWCwY2DmFtYhNOsMQ9JHZO2WSmgXinynnQaJo5M//eRswDkfzEy6ntexudmoe/zJAgRhTCQZ7Nl49BcCT7BxSIauTZQa7bwTj6HQ8ePMxE9TE2+IkKM/g1DKNVasmo1w2hvIwJKMLoZkde1hp357jdvGT0DIAjCXR698aVxUkBDijAuszJEbqmEfNmm6GgEoMN2fRw9VcBcoYJsbonPeDh47CRyy0UkOjqQSiTaDDLkIZ1SxB+fVZnIAe9th3ZCaotIwrmf3zjMMGbEje+FBOO/j4ZQngtLa9ILy1RkTnzts9tx2UUDmM6ehFuvIRVLYuzbo9DpsRHvQDIWhWlYUjvEelWPwOCp8T6wbQkklkqP/GjsOyO6Y3u36+RQoOT3smQMglADoueVq7G61oIVEXwqUhMsgtm4vguvvnUYMV1Dq1aH4tnQuvoRNBpg/LD5pluR6BuC3yhhy/B18DXSoehw3Ca2f/4L2HatS8D6iB74wU2u8Fog5f4uAVhMOsaKNECCKFea7/GoSLmttmqoNioo0fsNm4ck94ZpYnlmGhb1oN6owyLACHUi1LtgJtbJ/PFJlceNRKUkSTVtDev8lxHh9kWDoUVT10mFC80jKN2TklptOhB5aRkKN9WxSgP/mZlBudxEWl8Pt8HSe+c4+jaksFooMIou19MhK9FOaN+BQoNqKHJLlZWhMMJ6EFylOp6bcZhUDj23+aDjuqw6lqPnyFpWiLpUs5kJVD9Dk/K7Uqmz/q12cvkhPN5fsfVSbLx0K5458CZiXFNj2Qn+w1AkdigjEKoGhLQbpoUIwfHMqA6R2TTueAEcJ6DQuAwNH+J3ov5Znlgo1mlelcKik/NT5QqmZk9g+PLNGBhIIr2pF7HBfpkTL7w6SaAKGqVlBNxH5LHTqsOuleE6TVlYjuPAblGc7CZ0m8omUPpqIJXZpPciEcXDOsO3Ul7DsVy1nc3MAcvQMV+vYiZfQGc8AU03Jcj9kwdw329/h3UxE3XqxvLbBzAwuAVgX3jn0GsoLC2hs7sHW64ZwT/+/RJm50+hkwmttlwvK+RV1LYtaRB0+ATgyvp+9a0FVFqerOtAlqLO4cNCg5FiQ4Qd8bFczeGJ516WwHs7U6iQspYtEpfEMcIOHbH98IzwrtVqqFQZFcfNqi3Hm2rzH7SpEItFHvCzy6Hjqcl5PiwVWKqbZahSik2qmkkwQo6fev0Y6r7G5qkhnYpCpVLO5lY4tFThMPSLhyaxfHxaDjQe9y4xGo1SiboQEoAXHLRd9nQRgfci4ZAGm8L/4pE8pvN1idrl95qYiPg5ZlmyURyey+OhvS9i0Y1wMtLQtS6FeDyKzKZLEO25mKF/Q1aUEYm2NYTPeExui0NLR7oD5bXmfp3R3ccRahfbOwGGTMAAJ9ZCTC5U8Phr86hREviVHDzcMJQqadGYAFtdLiHW1Yd4Ko3y8kl0sCXXmqQh6aBOjSg0u6CcmEf/lZ9DH40nUymKj0kHDNQTSTQq9b36nU+c2vebr/ftI8IRUfb5qofHD69htVJDsWpL7j3hNkG4fnhmhvNIFUcDRHgNmRzJZAdWcqt0oglft5Ffy0E5XkRv3wZ0dnUj3dmL3oEuXN7toyMZQVWNZO//6S8PyoGEzjzKGI3YtPRi1sZiJaSa2dJzoYanDYvytJlUgkvDiODioU/h+ptuhs/px65YqHms/6KDnh4DPsWmvLICsbxareJSDjl+9zoUijX+psCMRifOdMMf/HVxjxuE2UItwOEC9YC81dmxNME4S0+0JV+EnzB8L5DyTNBIpdPtTOfA4esJJl9CVtE8qREJaocWHBisGAVVmz2FgMprNXSu35j92fd+vOfsgST078xXAzR80ZDaXgqDovYViUOVI5aQ0Qg3r9oOYkm+LsiJOWC0OA9S8w0rhgW2Zd+poyuhszKofOySLDmWno1GvYVtl2+785yJ6O69K/uOlYIJV8wEipgRAll3mpiGZZ+AlGIBKBEx0Go1kUh1SAMqxajF/iBkX9GijEwnCiWOb2xavQn2FwKokAbR6Iql6sSnt27fdw4Acfzt0Mo4VfTB07IriDdYHiZr39DEICoZkUA0eh2LJ+W6AAJQg6XqIcp3ATOa5Gmhc+ASOEoUcaXKJpVn5MwH7/7h98ffb/MsAOI4dLI41mh5E7rSnoZ0yqWocVUXVzGKc+jgjylOvhb1QLTpSl14W2c0uIY13mg5rIoU+voHOAPGcXRuCdXV/MTOnfeOfdDeOQDEkSvWxsn3PQx/WafLJqfgCDdPcdJJJWPkVEdv93qphmKUK64WpdAYbOU2Z0UzEkP/wEakO8QrpVE+NjN7z9MvvDx+PlvnBSCO2ZXm7ng8cjXl9dEIYx+NUkBiFpNOZ1Q0pCgqEQJwmIy1ulDLgI1Jk0OLySiYVpzG9T39vf1XZ7PZ3R9m5yNfTg9my1leRq+/LD1uqsYYQ35bqCoZl0OFxzNgRSwuLUvuxbhlkCpdj2djsdij8YS3+yc77y3jYw4FF3iM3zWSmV9oDC86icx1N96cnpp6UwAo85UsG1NjB/c8sSd7Ifv9D7TVVyASe6xXAAAAAElFTkSuQmCC"
+                            alt="avatar-2-img">
+                          <h3 class="avatar-title">Kelly Hsu</h3>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <p class="fw-bold text-primary">募資進度 81 %</p>
+                          <p class="fs-8">已有 521 位同學加入</p>
+                        </div>
+                        <div class="progress mb-2" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                          <div class="progress-bar" style="width: 81%"></div>
+                        </div>
+                        <div class="cardFunds-price">
+                          <p class="price">NT$ 2,480</p>
+                          <p class="discount">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="swiper-slide">
+                    <div class="card cardFunds">
+                      <a href="#" class="stretched-link"></a>
+                      <div class="position-relative overflow-hidden">
+                        <img src="/web-layout-training-vite/assets/course-1-5aa38dad.png"
+                          class="card-img-top"
+                          alt="course-1-img">
+                        <div class="tag tag-primary fw-semibold">
+                          優惠倒數 17 天
+                        </div>
+                      </div>
+                      <div class="cardFunds-body">
+                        <h2 class="cardFunds-title mb-2">健康廚房：營養均衡的素食料理指南</h2>
+                        <div class="avatar mb-6">
+                          <img class="avatar-img avatar-img-lg object-fit-cover"
+                            src="/web-layout-training-vite/assets/avatar-3-af2de766.png"
+                            alt="avatar-3-img">
+                          <h3 class="avatar-title">希姐帶你吃</h3>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <p class="fw-bold text-primary">募資進度 281 %</p>
+                          <p class="fs-8">已有 1397 位同學加入</p>
+                        </div>
+                        <div class="progress mb-2" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                          <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                        <div class="cardFunds-price">
+                          <p class="price">NT$ 1,680</p>
+                          <p class="discount">NT$ 2,980</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="swiper-slide">
+                    <div class="card cardFunds">
+                      <a href="#" class="stretched-link"></a>
+                      <div class="position-relative overflow-hidden">
+                        <img src="/web-layout-training-vite/assets/course-2-af95b296.png"
+                          class="card-img-top"
+                          alt="course-2-img">
+                        <div class="tag tag-primary fw-semibold">
+                          優惠倒數 2 天
+                        </div>
+                      </div>
+                      <div class="cardFunds-body">
+                        <h2 class="cardFunds-title mb-2">音樂製作入門：從零開始創作你的音樂</h2>
+                        <div class="avatar mb-6">
+                          <img class="avatar-img avatar-img-lg object-fit-cover"
+                            src="/web-layout-training-vite/assets/avatar-4-fac02bdb.png"
+                            alt="avatar-2-img">
+                          <h3 class="avatar-title">K.Dee</h3>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <p class="fw-bold text-primary">募資進度 76 %</p>
+                          <p class="fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="progress mb-2" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                          <div class="progress-bar" style="width: 76%"></div>
+                        </div>
+                        <div class="cardFunds-price">
+                          <p class="price">NT$ 2,680</p>
+                          <p class="discount">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card cardFunds">
+                      <a href="#" class="stretched-link"></a>
+                      <div class="position-relative overflow-hidden">
+                        <img src="/web-layout-training-vite/assets/course-3-a0bf74b7.png"
+                          class="card-img-top"
+                          alt="course-3-img">
+                        <div class="tag tag-primary fw-semibold">
+                          優惠倒數
+                        </div>
+                      </div>
+                      <div class="cardFunds-body">
+                        <h2 class="cardFunds-title mb-2">掌握商業攝影：打造你的專業攝影事業</h2>
+                        <div class="avatar mb-6">
+                          <img class="avatar-img avatar-img-lg object-fit-cover"
+                            src="data:image/png;base64,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"
+                            alt="avatar-2-img">
+                          <h3 class="avatar-title">Mikeeee</h3>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <p class="fw-bold text-primary">募資進度 98 %</p>
+                          <p class="fs-8">已有 290 位同學加入</p>
+                        </div>
+                        <div class="progress mb-2" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                          <div class="progress-bar" style="width: 98%"></div>
+                        </div>
+                        <div class="cardFunds-price">
+                          <p class="price">NT$ 1,980</p>
+                          <p class="discount">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination-funds position-static mb-6"></div>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary d-lg-none w-100 w-md-50">更多募資課程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="index-buy py-20 py-lg-30 bg-gradient">
+        <div class="container position-relative">
+          <h2 class="fs-1 mx-lg-auto title-deco mb-2">看看大家<br class="d-md-none">都買了什麼</h2>
+          <p class="fs-6 text-gray-80 text-lg-center mb-6 mb-lg-10">熱銷課程一次看！✨</p>
+          <div class="swiper swiper-buy">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="/web-layout-training-vite/assets/course-4-e273136f.png"
+                      class="card-img-top"
+                      alt="course-4-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">創意寫作工坊：從靈感到出版的全過程</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="data:image/png;base64,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"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">中文創作</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="/web-layout-training-vite/assets/course-5-18abd620.png"
+                      class="card-img-top"
+                      alt="course-5-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">小白也會！從零開始學習 Python 程式設計</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="data:image/png;base64,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"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="/web-layout-training-vite/assets/course-6-cb21fd70.png"
+                      class="card-img-top"
+                      alt="course-6-img">
+                    <div class="position-absolute tag tag-alert fw-semibold">
+                      限時 8 折 🔥
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">全面掌握 JavaScript 開發技術</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="data:image/png;base64,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"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="/web-layout-training-vite/assets/course-7-9e3876e4.png"
+                      class="card-img-top"
+                      alt="course-7-img">
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">HTML & CSS 網頁設計基礎教程</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="data:image/png;base64,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"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="card cardCourseBuy h-100">
+                  <a href="#" class="stretched-link"></a>
+                  <div class="position-relative overflow-hidden">
+                    <img src="/web-layout-training-vite/assets/course-8-651d7ef2.png"
+                      class="card-img-top"
+                      alt="course-8-img">
+                  </div>
+                  <div class="cardCourseBuy-body">
+                    <h2 class="cardCourseBuy-title mb-4">更進一步！深入學習 Node.js 與後端開發</h2>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="avatar mb-6">
+                        <img class="avatar-img object-fit-cover"
+                          src="data:image/png;base64,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"
+                          alt="avatar-2-img">
+                        <h3 class="avatar-title">Kelly Hsu</h3>
+                      </div>
+                      <div class="cardCourseBuy-price">
+                        <p class="price">NT$ 2,480</p>
+                        <p class="discount">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardCourseBuy-footer">
+                    <div>
+                      <p class="tag tag-gray mb-1 py-1">程式開發</p>
+                      <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
+                    </div>
+                    <div class="rate">
+                      <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                      <p class="rate-text">4.0</p>
+                      <p class="rate-count">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev-buy swiper-button-custom d-none d-xl-inline-block">
+            <span class="material-symbols-outlined fs-5">arrow_back</span>
+          </div>
+          <div class="swiper-button-next-buy swiper-button-custom d-none d-xl-inline-block">
+            <span class="material-symbols-outlined fs-5">arrow_forward</span>
+          </div>
+        </div>
+      </section>
+      <section class="index-category py-10 py-lg-30">
+        <div class="container">
+          <div class="index-category__container py-20 px-4 bg-primary rounded-7">
+            <div class="container-xxl">
+              <div class="row flex-lg-row-reverse align-items-lg-center justify-content-lg-between">
+                <div class="col-lg-5 mb-10 mb-lg-0">
+                  <div class="d-md-flex align-items-md-start">
+                    <img class="mb-1 mb-lg-0 me-lg-2 flex-shrink-0"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPOSURBVHgB7ZzdcdswDIDhXt/rbqBMUGcDdYK6E0SZoMkESSeIM0HcCZJMYHeCZANpg6QToOCRueupFgk4oA1b/O5w6jWCfmiAJAhQAIVCoVAoFAqFMTIBoyDinA7fSP6QPE8mkyUU0lDDTUlW+D9P7m9QiEONdIXDXEMhDjVSG2nAFygMQw1UY5oaDPEBMkEvWpHMQEbDOGcOArZ8jv3hRs+eG7p/N0zdlmGBLDcO1tx/DlHj75zQeEPcYGQUTej2qSPXmYZ7iXX3DvqpRowWB9yJ/n+JfO4GrtG3uk2swCrI52qD7otA35077enfcJXBKihrhJakCnoS932jDrozkmeBnupU6CPo8kxSM8+tSFr0k+MTkHNGul/oeE0iiVB+gyKqsXCwCrt9jOc7xdUPoIR2AzpLaEFmEbvklRrvMyiiOpGmh3ulwyPYRc3y3sgRiSzBLuo/rvp6oGE37shDthmsoqhbYHDjX2CPNWQg12KCel+jQJYfVTQPDBPfGg4TtyrTJM5x3uPSBx0wYfeBdPMbOlzAOFhQI15yTmS58Mgaz3GBzPQBywJdAAnjw7nzSRgUB0la4FvAP0KmwJiKcVz4FcZL8t2TDRhMeA3j4yHlvg5uH1iBX2WpYBx0JF850xnWKBwudEpyC8ePe8dT7lxQHAujz2y5aU0Fx0VHck4Nt4bcoM+1SpJA1rnHfdTd0E0b5OVyreJyOA3sE/TWuMLDY4UKc9xspR0FBvQLnqEslWmNFvfhwujLJ+7xeLjDLd15m2lMTQdXWlHBcdGRXEpTnuw+EEPRDhxvRFKROK+KFkH1KaHcZjrQDOXgOCOPGBX4bipJ0gKDOY+1NvnzuxdUwW6Zxi5QW1Ad5aKqSh8YTHgMy1h9WO8sSWsu6PADxsEtGQ4rCymaSIfpjKtx5vSLrFFsh5wzz1tLEuuiyoRw4S51HtqshO9yLJbmWo1pwB5Z9ohk2e5KFujK2yqwBStRLkXdAtHnTCqwh+u31bd85XDhLK6ixBkok6NC1YV9ZovMQdmNVS0wuK/l0E/djbVduAEZzhJcHd421aNLkp8g5wqsgrL8iNueNQt6NcqZB12XFWwFenZXlgQvsejpudVu0WbDDfe+5iqDVTCdH25xIEpBne2uM0xb4xNYBeOuuMD4hmuJG88j15mGe4l1TYCbt/zXTF2OG7fMazV4aFv+/wW9O1VCnQWjAUWrPNs8x8GCB/jZE3Mk3JjlvrvEYnFRbCnd4h48W6AfRTd9/WOFBj8+Zvnzdw34uPUTyaPmNv1CoVAoFAqFQuG9/AUWnptxaarUwAAAAABJRU5ErkJggg==" alt="polygon-1-img">
+                    <div>
+                      <h3 class="fs-1 text-light">想學什麼嗎？<br>一探究竟。</h3>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAboAAABiCAYAAAAm7RZzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA1OSURBVHgB7d1RchpXFsbxcxs0NW9xVhClpuzMPJlsIIIV2FmB5RXYXoE1K4i8AssriLwCUDLvUZ5SJWcqZAVDXi3oO+fcbhA0EjTQQNP9/1WpFBCSUrLExznn3ttOAADIofuHP5ZbeSRO37wchztd8r7h5Ktw2+vHJLyJHz9mzN19LBcv/anPHTiRwdTt8LGRlz8nj/X68UjfmuFjg87XbpA8FABQWxpeSfgMNZQsmDS4Ig0rF8kXdtsn960WUGWRhOEZQQcAFRcqsc/SssCKRFoWYhpgrVB9uUzVVT2DpgAADl6ozG5DaLVCmGkrMYSZBdlQ743uHqv3J+pQ6vjQ8gQAHIpJoDlpa4vxWAPtqeZWS3bQWvQ2B3NhTjYYz8j89IzM2IzMp7O05tSMLTGZmy0zaamOjWeDxt7Hk9s2L5y0WtP/F/u52H8P4kjeEHQAUFKTlmMkrYZooI0rtIJNAszJtY/lrxBiPg2zzMKOQ0TQAUAJjEMt0kqt6CptJsisAktuhxDTAOtLxRF0ALBjoS03DEFmldqJhlpbNg+1gX6d/kyYiVzLUQizg63GikDQAcCWpfvP2rZIRJ91TySp1tYWKrRIevr+11CZNeS6DpXZugg6AChY98ZboLUbLszVnsv61ZpVadch0Kw6o0JbC0EHABvqfvJt2bwNORtqR9KjSisGQQcAK5pUbBsE26T9GMuV3rzuPHHXgq0g6ABgiXTv2vNGpMG2XisyqdYkhFpPmmGmRvtxRwg6AMgYr4qMklB7tsbetYF3YbHIlXhtQVKt7RVBBwCSrowcatWmwbbGHjYLtsswX2vKJbO1ciHoANTShlXbuBX5kYqt/Ag6ALUxmbW5ULW1ZYWqTR/fG8/YOo9dT3AwCDoAlZZpSbbzfp6tigwVWyQ9aYSl/iweOVAEHYDKsX1tTZGT2MvpCi3Ju3Ykc7ZKIegAVIKFW5i3OXkh+VuSAw3DD/o5lyz5ry6CDsDBWifcmLXVD0EH4KBsEG7Wkrygaqsfgg5A6a0Rbsm+Njte6yjM2wi3GiPoAJTS2uFmMzfmbZhC0AEojclqSZHXkjPcxotJmLfhIQQdgL2yfW7NobzQcLMTSvJckJRww0oIOgA7lx6/dbrCJm7CDWsj6ADsxPhsSQ23t3nDjZkbikDQAdiqVReVhK0AFm6slkRBCDoAhbPqTedur/LO3djnhm0i6AAUIrQmR9JueHmVpzU5da7kOeGGbSLoAGxkxdYki0qwcwQdgJWtuGpyfFWAfxNu2AeCDkBuVr01nLYm/fKLljJ3Q1kQdAAWmlpYkue0koE+7p1wZQCUCEEH4F6hesu55y2t3mhNopQIOgATq1RvrJrEoSDoAKxSvbFqEgeHoANqasXqjYUlOFgEHVAzUysnny95KNUbKoGgA2pglX1vVG+oGoIOqLAV2pNUb6gsgq4i7OKV4T+GciyxPqG59EnNyfH4Mdqu+mrmk/zdx8LNzO308+3r5LnSs2S+dn/my7iZ2wP9ugMfy1+xvg+3fbgveUxT+lpJ9AVry7u4JF05+YHqDVVG0JVYaDdZyHyWVggcDa3IyyMXyRcWUiGY1g2iw2BPvH1nR0h5+TW2IIz1Td93nrhrwZzujT/VFzQvcrYn2feGWiDo9ixUYhZkUQixY618vtInoGNJ3qoaYEW5noSgl15dA3Cl9qSdWsK+N9QMQbcDoTK7DcHVivQthJkPVdqxoGgDZ+24cfj9TXpVfVLPG3BcyBR1R9AVLFRot9LeQ6BZZRNmXyJ38y6bg6X3zc3NxGVuNzO3U+vMyyYzw7Hh1M/A2q13c8RHMtWOndwu9md2rV/zKq7IQgv72Ua3cqY/v2eyLOBoTwIE3SYyofbUJ1dSLrTd6H0yk7K3NLT6k4UbaTBVdeFG+PkO0zmkhWDS2n2qH3rkcly1+gFW8fVGXj4eWoWTc4FJ0p4cykXnXyzoAQxBl1NoP37WUHPSLjLU0iCz4LJ2259p1XWtT8IDVh4u1r3xYbap1WH4N3Fr/Jvo512MRvKx8427lJJaKeCYvwFzCLoHjKu1RiQnWkm1N20/hkCLwqxkOsz6PCkVq/ub/rsdaeAl4XeSu/LTCjnycjFsyoeyvMDIFXD6u6Qt2XdsDwAeRtCl0jbZ84ZVa8nRSOtWawPvNNBiDTQLM31jKfz+hEp8pEERy3NtMZ/kecESqryGzrb2FHj2u9gYyvtFAcf8DcivtkE3U7GtH2x3oabVmjQ01Gg3lppVSZoSFnrPloXergNvapHJi4ceQ8ABq6tN0KVn/bWiJNSerdOK9Mmy9StJ2o49Qu2wpaF3Gi1ZvbjtwMuzTYCAA9ZX6aCbtCOTg2xXXagwmFxY0oKtGao1ZiAVlO5ztCrv7YMvgHSGFw/lXeef7lwK9PMn/5aAA7arckFnr9LXrNpmgo0nlnqyI7SWBl5DOptWd+H31Ml78Q98n2SRyUt+D4HNHXzQjVuS4Xy/FWdt6atla0X2eELBtCWBN4hHWmWtUd0tXWhiAWcV3BN3IQAKcZBBN241pYfX5m5J2hL/ULE5uaQViTy08nqtHYJX9wWe/vGcf/fYvcn1de7mcGcPPIR9cMCWHEzQrXLhyCl37chmOAWjL8CKwt68hpxF96+GvI6b8v2i361lbcrYa8AdyRkBB2xHqYMuU7m1c36aLfm/DOHWqO6Bvti9UN1ZOzPbQXhgbme/v42RtimTlvqc9LDlN+yzBLardEE3mbklJ0LkaktOtySZtWGbrLqLGtKda2Vmwu7n//pXcRzalPO/vzaHs4Ar8bFjQJWUJugmqyWT9lC+cHPyQVhIgh0LldpQfpzrMrgQYC8XHdtFmxLYvb0Gna1A0wH9ixwXjAwIN5TJ1Y2/WHSKyTTalMD+7DzoVl1UQrihzHKE3SBONnwXutEcQH5N2ZFwErstKhkme9384ocPYrsiss3cnhBuKC8NsfNwbuY9HYlQxQ3lJdeFA/ZrqxXdZO+Ql9Mcp5QkqyU14KjccAgWLjixF2tN+ZYtLcD+baWim1xHayjt2O5YEKfp6SQfuZ4WDkW6GOWthtzrBQ+zx7zX9x0BsFeFVXR5TmCfwikQOEi2gMrdyqVd0Tz7MXvR5jJzZ1uFyXFewH5tHHTp7O3VQ5tipwzS6u0drUkcou6Nb0WR/HjPCSeDOJI3nX+4i58++e7MIqtkf923vKAD9met1mV25aRfsLKE1iSq4D+/+xcjL+f6Cz3brbDN3yPpjBecjIbyMmrKLzLualgoDkOX40wA7MVKFV14RSthYcmyTd13qyap3nDg0mvGnWXvD7/jR/I6+wJOuxxn6VFhY4OTx+5LAbAXuYJusrhkyb639ADlD1RvqIoHQy7ZG3d23+dYxyMayh8y9WJQH9/hRR+wHw8G3bg9qa9MrXpryQJcBRlVpPO2H7zMr6zUedxLm8ct+tzu7/48XN4npX9ove8eO1ZgAnswF3QrrJ5k5SQq66cb/947bdPPspZ8J88xXuHsVn03fV/clC/5WwF2bxJ0eVdPhuotlnecvI6qureSyyw6yfl1ZlZg6gvDNxwFBuxe0/YF2cbWpasnnVxwagmqLp3JbRxyZiRyFU0FXSM5KoygA3asGY3EXnUeP/Bx2pOojXsXnqwZcsFQLvRv5+3dl1o86wawHe7qk/+fZGZx7H1D3aTnVs5WW5uEXCr79xUP5WsOeQZ2q2nLpLW98oPdYPUk6sjm09sIuSCSvg7n7iq5Zuie9AXAzjRtON79zV/K30U4aR11YzNqbd+/l9n5tLXsvy+i8nJxOPoOwB6FI8BopaCOwsZunVFnz67U6u5l5xuuBA5URSRATdmlduZCzlr3BW6d8dHc2ZjMvIEdI+hQS90bf5rdKxf7cGWNMylIOF0ozqy0PGI+B+waQYfaCXO5aObQ5bD4REPoTIo0ypwN6+WaVczA7hF0qJ3oVgMt27K0FZYFh1AUz54ypG1M5n7AHhB0qBVrWaaXmZoIc7mCF2RZ1Zj9PnaykADYOYIOtZJtWdqlpYqcy02+z+38CSvsTwX2g6BDbYRqLtOy9EP5Xgp2XzVnVaMA2AuCDrWRrea21LJM9uZNs2ruyeLr1wHYHoIOtaAB1MpWc+HQ5YI1klNWjqfvo5oD9qspQB3cSmv6MsNxLB+LrOaskmvcyg/Z6zmGvXlUc8BeEXSoB5ep5gpc6m8zOXcrl97J05kPbGNvHoCV0bpEPfjZE0kaIidSALu8TzSUX9w9IbeNvXkAVucEqIHub/44asof0/fpL39v5OWNthZXqu7C0V5DOY2cvJqb+0nYL/erH8lzDksHyoGgQ2389Ml3vWSO5TIuXDPuo87TetrjGGhDvz99yaqwXWAYAq2lleCz9Erhj+77HrFtCj+S11RyQHkQdKiNUNU1pDs3ryvGIE4uWnwuAEqFGR1qw1qJNjeLiz2KKwRc3JSvCTmgnKjoUEvdT77tdMbmMtsB8tI5XN87DcymnNOmBMqNoEOthYUldjkdL62wctLLsf5RHMvUDM5CTf9SBvp2bQtNNNwup2d4AMrt/zUo+xqiFm8UAAAAAElFTkSuQmCC" alt="line-2-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="swiper swiper-category">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARBSURBVHgB7ZvPaxNBFMe/M6n1F9L4o4K9dKMiCBUFkaIXqwe9KM1R8KCiKJ70KghW8A8QL6Ig0ps3U/Ss0YsUEar0oijZXKyotSla0WJ2nLdvp9mkqTZ002x3+oFhd7Pbw/vOmzdvpvMEGkTdz6Yx/acPoq0bwnOgRFr/7PDL4MqkgxYFpaAxAm5w56IsikhhAmW8xiqMiDO5EhpAzOcjdTvbhzavH57IAlVGxhFXW5XXwgyKi7n8/z7+pwDqbvYSlBpAdD252LhIyQFx7uHgXB/UFUD3uIOUuq9dug/JwNXee0h7hFv7YpYAvvFSPUX8Xb1R6opQJUCCjTfMEkFWvU628QQP7RAzAujeP41kG8/ouKbuZC+bx4oHSHUN1lCx1RfAn+dt6P0K6cDmwANS6hRsQ3iU1AUCJGe+nz9C9PsXzu3VBGykXayX+IU9sJVp9Ent/vYKoAO/1LngUl3oLBzlORQEHdiKlB1ST4HdsJWyl5GwHFmzjWUXUnS3IUrWbQZ2Hef7j6PAmG6/pxBnohXgyBVgY4bvewIhSITCMFDU7ftnxA0SILpp0Bj/Zgjo6gE2bQO29HA7cJYFIEHePWEPaT3paAUwvH/Obc0GoHNbIMZ2HiLrDgM7DvPQ+BR4B4nSGu9IRzsEavn5Tbs+tZf83Bl4RKcWo6ML6O7lRowXWAh3eFG9o7kC1PLlAzfCeMfeE/xMw4caxQ4zVNzhpgfSxRUgjPEOI8Djqzw0yEPCQ4UwgZSGzNcCoqR1AtRCbm9cnwSguGEEMY149YBbRMRHgDA0BN4+4bZyLRvv9LIglGdEKED8U2Ea/xQL8rf4uX0tomR5LQDLsV6AeAbBMBQEKT9wetEM4ikATYOUIWZ025BhEQwRzgBEfAToCqY6MpwECBNOkceTkgitWK2N3Vd5Pnajcj89VZnuBk8mKBWmRdCmYHVIi6EwY6OVTRS6ns/x703eUGmuANTLXbu04Vs5m6NnA/UyubNJcR9dRStojgA7j/JKj3o7DKW4tDNE45mMp941Pd0iohWA3Jd6dOcRfja97AZG19v0IBEoytcT4kfzN0lIADpYGM2uEOXrjW6KPtN/s//s7MhP4r24hyZTEupOP80rDuzEXV4LwHJk6OCxfXiquOwB/nFzW0nJAg2Bhs7XJ4oy9BDwLI4BEiWJlM1BECMS7cjDVlZpAYIaGxf24ZLtwUlRMQTbECJPF3NUtrVr0lZQhl9HNFMxohdFdFzWljODrrgw5J/mCGWC4jpsISUHzG11zdDd/qcWnByf6X2iei1QFmeQ7BnBL5oK/2B92dys1aD/AavkIil44tm8CyfD+JVkXEzlYGlSouAuLuRuzvXB/Iun4WkxxEHEX4wilMpBydyCi6fr4ZfYUJVJCrt1MrFeX+m0ucMvVSb0aQeiLZ+fnHkSwvyDUA9XbxJSFvTsVaR1TaPl838Bg697MfvjvSEAAAAASUVORK5CYII="
+                              alt="megaphoneSimple-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">網路行銷</h3>
+                            <p class="cardCategory-text">342 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARKSURBVHgB7ZshTCNBFIZfFwQBcW2ChsWhOEAhIFcMCYqiSbk2waAuSAQ5UCjCOQTioIQg6SlAtZeQUAU9DLguaBKKIRjovX9up1nabaHHdFJ2+JJhdmeHlvfvmzdvlp0QNUgikQhzFX16euoNhUI21zi3cQ3nnq5ht6ig6BZBqVRy3EOHv/OK61vLsv5wnd/a2ipSA4Re04mNjvKXTnGJkWtsCwNRsly2WYzsS53rCjA7O/uNq2VSdyd143BZTqVS27U6+ArAd9x+fHz8ySpGKRg4PETG2SOcygtVAsB4HtcZan1XbxRfEZ4JEGDjJVUiWN6rATceiKHtbWiTB/F4PMFjPkEBB1P1wMDA3fn5eQ7nlufCdzIEr61CAMzzFGzXryTs2vxPAE5wvpJhcLxDUlcWIErmMYUfIeT2rMYtGQhPiRF4wCCZS9TiedFYAdh22+Ip4b0udN4McgIMAZsMhQX4ZPEM0EuGwsG/zyLDsSoeYxkF297bThpZW1uj7u7uun1ubm5oaWmJ7u/vSQfahkAsFnvReIA+09PTpAt4QNOnQa9R6+vrVCz6P7i1bZuSySRNTEzQ6ekpXVxcUJMJh/jBZ4kUAkNhQGdnZ9W1TCZD2Wy27u9PTk7SyMhIVTuGxPHxMe3u7pJKlA6BmZkZ4ep+xuOuv2Q8gEh+HoLPhLCqh4dSD9jY2BB/aD03/1/C4TAtLCwIT5ifnydVKPUAeedVG+/9TD/vegtap0HJ4OAgDQ0NiaAHHMehfD5PZ2dnpBvtAiDKS8MlOEfp7++n/f19enh4IF1oFQARHoYi2dnc3KTr62vRPjw8LIIbBBgfH6eDgwPShbZECEFMTm+rq6t0eXkpApqc3tCGY/Tp6OggXWgTQLo9Ehx4QCVowzWA+KALbQJEIhFRS7f3QwoTSA+Qga3eeqCnp0fUzZhGa6FNADnFIeD5iYA2XAOFQoF0odUDcrmcSGQWFxdpbGxMHKMg+qMNnJycaPUArdMg8nzMBjB4bm5OFC9IiA4PD0knWgWAF+zt7ZmdCQIYi9IKfDwUJYXI53gY56qRn6n6WSGGAEKukr/46OhI5PRYtzcLpM0KKSoVIJ1OU1dXF42Ojipft+POQ2B8h0KKeCKErMMmM3E+gqDnxWPjYNuvPjzAfd3cSCzLKsAD9K08WgwxBAyPAUWjBWhra8tb7e3tWTKXvOXusXHIPBzYLqfBX2QY2FeEWgjA04HSBPs9gE1VopYNvCbA67KmvDPopFKpPhyUM0H2ghUyBI7+y/L42Z6heDyeCdBOsVqU7z54thZgZZIU7BlBbJryNhi/ba5qNYgOrkoOBQTOdn+/euOkF/aGBHsDNhjZ9D4psvErOzs7P2p1ePXmaRYiwYdfqMXFwAqPA3kauc2bN0/74W6fxyaLzyxKxH3b3HYvl6MrXkUnhdvn+XvuPOfyv6fYKX6HdT0f47lGttHt838BYlHLzj9x31gAAAAASUVORK5CYII="
+                              alt="Frame-146-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">拍攝剪輯</h3>
+                            <p class="cardCategory-text">563 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMnSURBVHgB7ZvNbtNAEMf/szEXBKr7BEmfgL4BLidu/ZCQuNFI7YETvEHbN+CGaJCq3pBQm3DjRMMblCdo8gQNCHEAx8OsnThxmjRf63x485Niu/bE1czO7O5sdghjwmdlF82mhyCXBwUFkHLBXAgfUuscCsKVowszNEDyid9Ntej/yZn9Oti5lec/4OCairuNMd4rXxsBLn32ALUt0juiWAGLDKEmxypYndPhbnW4+D3wafmNtPIxzLXkbAmNQcd0sHc+WKQP/L5cgMNncuUhC2hD5NSWhEft7qMeQuUfBFcL7+rjMsAICQNkVvk2fYygEgJZVl6jdfN1aHeIDcCnF/uZVj6GPf5w8bb9V8cDFI5gC126hgYIx3krWj/G5VLZ0xeRB5B6Bdug5o4+tUPAg3XQdngM5/Z+cAsbcX6tK/j+Jmzl72NPQkDZawDFBTFAsJyJjgmItAGoAGuhNR0CedhKgA0Fy1GJZSzbUMib94CXz6PPkuDANI8eYplwZIXV1YmycQ72MDG//wCfviJ1ZOVaQoAXbx4wOy9yzYdAm4+XmIhpPGcCVsMgLMd6A6TXB0wby/2+n8LosFwekMLokJ4HVL7BKDvPkAarThCWsxoFkBYpxaxplssD9DBomPnnAu3xftLcYUpWnSAsZzUKIC1mnNdPiv5hZKyNhamQQu8+Ig1HlsUbrV2dZplTrz4WpA1gmvm15kSYN8AsVnMNouKNxzYSoL6aB4gZ6rAVhRuV2IdvGxzU7e4DZB6gfx6vwVqca4VcrgpbcRrXKqyxicpM7IKoRsViozUM8hdYB1f1MTIAcwW2wSqsI4orRrh0ebuQewXSQLv/wd6GvuyaCfIJ7OG4fZGsGSpdXmWmUmwQXa2vSeYCPhXDasysonXL0VbiVq9MVDnGV3E5bFZoKd9bNncnG6TXIvBPrJQlT2B876e8Zkjp7MU+FB0trzfo9c7mCR2+eDdQAiMQFU/TPkg9XXxjcF1avCI5TkUUrw6THskAideHJTb+Jth5AvLXQU6+Y5RgoyOp1szNK3RLBj+73n0T3ZYwDZpyP3cD1azrvGbc8vn/8776er12RWsAAAAASUVORK5CYII="
+                              alt="Frame-146-1-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">自我成長</h3>
+                            <p class="cardCategory-text">490 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVoSURBVHgB5VvPbxtFFP7exI1SeqgdCaSEQ5zCqVSiooo4IMDtkTaKDw3NAamtUJCokOAPqJRE6okLnLgggXJACgUJV0WVQJA6JRwgFAWpcCvZHEilVtTuwW3UxjOdt+O11z82sdsd2/F+0nr2x3hX3/fmvTczu0NoEem0ivdvIUUxjCiJJJGMS1CSrxGQrNRUcf0TRzjI67vny3cGHC4FlKMI6wSR08/+axNYzWQq9ZoBNVNpKq1SUmICpNL68Ul0NxxNKksk5hcylN2p8rYCnEqrD5WSswjPku2GAyFmL35H80EVGgqgLZ4sKvUlQaXQG3Aekjiq3cOpvVAnAJNXSl1V3d/UW0VDEaoE6GHyHupEEP6rPU6ekdyjXdt/oizAZHrrTI+Td8Fx7VS6+JF3XBZAKDGDiEAplLm6AnCej4L1fYhPpR+leMcVQOf604gYilKkuSy5AKUQMRDpni2Xbt9eyRwiCJ0SE2IAOIyIoh9ICQUZWQEIMqkF2LUDnaeGHuEmxS4Y3lqDENgvlBIjiCikVKMxdAGe2Uc4Ps4lcOUycOe2QrsQ0z6QbN/j6vHsc4SZC6RLczz2KjB3vj0iENGIQAfhJ8+EeeN9c66p2bqnRscEqCU/d95s7RZBp0HV1jTI/j45Rfj4k2ryd27D3dosQpyDoHUBmHTqmPHvg4dqCXnHxuc9EWYuVFqJxZgQp7cnitaiDZNl0qlj5EZ4xuamwvXfgX9vAif0eCyRoCrLe/C3gEbXw4I1AU6/S3hrvGLttZsKf98Arq8obD4w5xKDwPQ56qgIVgTYp639xVcmvv78g8LyLxXStei0CFaywMiosTxb/acfg8kzcneBzz9TyOUaB75GgdFzpzBgRYDkqCk3Npqr36oIx8fDywxWBPB6dUysWewkgskW5jjMFmBlLOC1gFv/1V977Q3Sm4n+GxsKv14D/lwxPu2JMH2uOgUy/J2mK5fDiwGWBDCWYoJ+HBkjnJioWHV4mDtFwN690EIEi8Co7TSFhdBdgDMAN1EOfLXBj63P+GZB6TfP0i3d869X+3StO9gizwhdAC8D3Nqob6ZDw6b8tkTcKzkV1oJF+D5j9m2RZ4QuwHYZIFeae+axgL9sJBbj4CFTLi3CCnlG6DEgKAMkBsnr7uOkJn5yqtLsl6/V32dAx4WXSuOG7KK9uYHQBWiUAZj89PvkNnX2a44NQzoA5vX+8lIlC/jB5FmEf24oa9ZnWBCgOgPUkneDm9s6trfqK2OmzC7CKkKNAbUZIJj89uD/HXiBUCgAK7/ZnRoLVQB/BnhS8owjJev/ocnfL8AqQnUBz/8faOs3S56FGnqee4YmTfL+YMILfrAOFoA/LAxlVsjLAN6sj598EFEOdI3AkZ8DoGXkYwTKhzUv6LUAD7n/Ce+c3Z7o/YKJ8s6a2bz9Nr0byIfsAtVd2gMv8q8512GigQhVgEKhMrHZbUSDEJPm29okQsAH73UnySAopdY7+maoGyCI5DoiCiFoTb8Zau37+l6Cdth1IUqLD6IIHfvy/G7QQURBkKviIfqyiCg2EVsVvMZG9wYdRA8Oc3fToCR1CREDEbJcugL0QWYQMWj/nzdlCfolKU9ZRuWbQefipT536FbuCUoqziEqEGLW260avk1OyKs9tFIsCGXrM6rGAn1EZ3s8I7iLpvwnIr9srm40uKArENHRXmoJitRS0wsn/eCVZLyYahe3hjzp4P51pv/ToApNLp5+lJKSzhCJN7tdDB7h6Z9Mn5CZhcye7E71W/7WhJfYDGDrsELsZQXJE9gj3vJ5PcUy6rvxfoS4fF4Tu1c+IlrjgpfPS4l7Qog1heI6j2taXT7/GAa+wdXktNInAAAAAElFTkSuQmCC"
+                              alt="Frame 146-2-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">藝術設計</h3>
+                            <p class="cardCategory-text">230 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUpSURBVHgB7Zs9cBtFFMff7p0cR/6SmDgDoZAUyjBDZgI0hEHMQMPHxIWcFlNTQEdpU9LRQAtpbRdmBmgtZqhCY4qkPakJTMIg2YmFkXS77P/uVh+2RHS2XsbS8Zu5Wdm7Xs/779u3u0+3gmKy4tUyjk9FmUrltKK8JsoI0nnU2RLg9xQ+46AuzNPtW1RsKcivCunUtGr91iba2ylk63E6FqM0Knm1IlHqliC1YgzL0znGGFRRJMuCWne2C9nyCO2Hs1p98qlWaoPGN5LPFIghpNzYzM3f+Y82JzFunnfJ/dY4WZGmAAjRIv9tMz0qA+r6gfEpcnbPu6vHZZgIfQJMq/GWQSLI3gbTbDyAbeHU7tIRYNU7WJtm47voYsnb/8z+1OsB65QYRMfWQACs88kY/Q6Zkve4iA+BAIJSH1HCMPubFZTRFFBFShhSilsoBfb2Ljk1SiBt8rPSJbpOCcUhp2imgEysADi9IgZM5EFnHOA4DwHylFRcsYQpkKOEInwquMREcT4VlOUnrRN1+RnHPJIuu+Eq/LCt6FFb072jdqx+xoGLQKBp/HxyaTYol42RW/V/aE4Kem9xhj5YTFFaDs7DPDJC3DvyTftmIMpq5gLdzswEdRwCCEE5Ng+A0dYAjPbLs07HcDvaKAHq4RUQqzgv6ZppCyHs6H/31xFxwSbAZjCKOvCE19Phv7lvjNo0wsC4QUCI942XwHAIAb7584h2mdwfuJpxGVx2u4fNUQypNBV9bdpVmj6tPRdOoUuuJC5gO9s+AAHOzt+4o/jjQSsQAqAPTAkmMmzybjyfDkrEgtO4MILeTwfN4DNiCRcsAlybdY37iyCqIxacFvxtQ+nAA7i8gEWA4nwY9O42+oMdRnIrvzBwRAfVHRrjMR3Aa+kUccAiAJY08Guj3/VtTLDlKHV2czRRHnDZDdd7z0T1XhAPestR6ipRH8vuSN/ixYZlH2A3PJi/vWBOD4sJw+oOoz7mJI8AfIvshMC2EwQIaued/z2AGPn8QYPGwZdX0sRF4j2ARQAb/WfHELkvRn0cKo6sBZMAD6Nz/oups3f/QtSHzR2MGxYB7kfn/aszZ+/+1XS4A8QRmQMWAe5GW+A35twzT4Or0baaKyfIIgAyPngwf9+cO/1C885CirKO6OQKOWBbBeyeHkbcSMcXAX/z7kJ4Alz/42/iAgLEerFwVMLsbigCTng3Y3jCTXOctqdC9AEPYKKOM1adKy9oDzc443+4NENXzHz+xczlB63BBr10wQk8xgZPGH+WhMrTgO2sO0Fgs8O3jQg3LjrBU/N1IMLvkRBZkz+E0ZjvAPsIZI9tMoQTdgEAIjimRJjgDNNlWedkmqsRZICa9IMxvMG08TmOG7543H3JmQvMY5vpheFImfd+NYZ1vtJkm+sD0Zqqz8QDjhMuaTzLWlzMEKgqJRTtkCc10zI4CQilq9ioVii51KW9fZFM5J70yS9TQmlTe0/ijk0SpwFshu3BQqxIf08JQ0kqo4zeFZY7lDCEEsE9ok62ouQd4HXZRLwzCPffKiwW8LknH6C/oISAm2Sdz70VJe/x7rTcFBtG7+iDvoyQWRY+nuYVwV6aOva7fpJ2be5EThAN0HDKPOHnkS9O9oKbZKZYn2BvqCO4bxeWvhrWYMTL07hgpNYEibfOvRhaV7WgHexttgsL5ac1j/2tRXjFxr0upHhFKz+rpZMTOsooKVXo9iyWaIzX541h+52fpPRQaGEOcsrfl9LxlFJVnGviXp//Fz0PJKXC8CX8AAAAAElFTkSuQmCC"
+                              alt="Frame 146-3-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">數據分析</h3>
+                            <p class="cardCategory-text">395 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANpSURBVHgB7ZtPTxNBGMafd7bRRmLYGkQ5sXjwCicvHqRBzjQl8Sp8Ar16Ek4mnrx503DUBFKvgGn9BnD1AMupphy6JBWr6c44s6XtFqi2dirtzv4S2NmZSbvz7Dt/3um8hB7JHOZt3PDnrQSmhU8OQdgy21FlQpDTrEiwZYYNHRB5EPBat8I9S7pCiCNKUNnnYh+VxF5uJu319NHdVMoUd+aZxZbkQ2RkMx0MNeQSoeAT38jdXiz8tfafCpdLu88EaE3bm/zvSDEssbY58XijY43LMjPFvGNZ/nshMI9IQC7nLJ2bSrsXSs5nqMYzxvPDb+q9crkIbQJEt/ENLorAwsXRbrxCBF07nNMUIFvaXol24+uocS37bed5475lAcJ6CVMgarY1EEDN8ya8/RB25li1+UwAuch5CsMgnzLqWu8CkZnvu4eIloJrppy32S+/DAPhp1aKoVqbg6FY0qljjGCsANKTdFjgthqKdPQcpv7BUBjDuOoC0zAUwcUMg+Gwtm0s0yA2HVsADCcBkvt9An2TTk5h9eZ9jFECg6TkV/Hx+wHy1SL6R9hMNl7LOuDJ2L2BN14xaSUDoTVha3ti9WCK5dJnDJLNyQWtQseDIAxHe6d9O/EQo4R2ASZZEqOEdgFeefsYJC/sWehEuwBl/hOjRDwLwHBiAWA48UIIV4SazlLsepBWM0dj+gznNwiX62ZILID6LP93rswCOr3RQS+kzhOPAdDEqajhhvTTX996gEFzzKvQhfplqKeDhZ14V/mq9cE6oYT+UDmAJrwEBHlA/+cA8z+Kwd9oQV68EILhsNDBY/MQ/Ci2AC5wBEMhRocsfA7fNFSsASOYPAbAk4MguTAUbmGP+desAkylkthjuZSKsTHRCshV8UXBNCgHg08wDUJBXRoC5GAYnHgQR9TcasmWdsu6zgoMP+Ru3VmYUanWSrAm1mEIcvm/1kyHC5ZLu/noRIp1ovX2FW2+gO9bq9GeEepBU20556uYFjZ3wRtUFeoqRcgShPjSdeBkmGxxewVMBVONqDWooGvO17fuLr7pWAVdoIKqpOu4QqBHQy+GdO+FNGS1tslN9Rk8fRlB+HyyNmdZNCu/JCWdKXXa3Am+m6M5usq9pnGt4fNcnDRvGQ7PkrK74oTJe1/ta5xahV7D538DrpFMltyo57AAAAAASUVORK5CYII="
+                              alt="Frame 146-4-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">投資理財</h3>
+                            <p class="cardCategory-text">486 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ6SURBVHgB7ZvNTlQxGIbfHkDjL2g0MTERMC7UjbJxZ8S4UxP1BvzZ+3sF6hVo5AIMS92Iew0Yd24GVioxMpCQmGBgEA0Rhqnf207nnIEBZqRnAqc8SW3nUM74vf3ary2tQoPknukOtKJXip2RQlcJ6IBGl/mhy4mS5zDJBwV5dyHx7nwl1xiX0oykERQx3PNIFdAAqp5KuT7dK8ZeK5VwXX6jC5sZK86QCNPfc08NrV99DcTwB5I9gb+WbC5WjCc9d1X/6lVqIG7eJW7+Uoq9yAIUYhEXpXvkV/5oGcb4NgxW9ecssIoIVQJk1nhHDRGiqgpZNp7QNtu1K1QEyL3QtzNtfEyv2PrQfYg9IMJjhIKKbTUCMM4H0vqODmMzygIohVsIj+v8xwigsxLvG0FmtiYrz+1nECJFHIjE+LMIlCVZ1EXiCsEK0CILu0gGgK250PGBpgAIKvxVo9BOAToRKiV0RwicKLAZYDUROlvRRPYejdOO/ZL22edLf4H5nzbNfgd+T6JpNEUAGnzknM1r0bIzFubwGWBhDvjxCZj+jNRpLe/epgINo+E0irClp7/YFmZrL/yK6+06BLQft4mecewScPAkMPE+rucdmQIoWRVppACNOnHDGkbDp0ZsYnk9Dp6ywlEIesO3N+mJkEoUSBpPA76+si5dj/GErk+j6SUUge/imJEGqQjA1nPG/2/r8XeSInRfRip4F4B92PX5jbouPca8Y84KSmF9410AZzxd3ke/pQgT7+J3s3v5xKsAbCWGMhfGfMGowUTjGRl84lUAjt4kjYkMJ0iEXcwn3j2ApDGB4fwh+R2+SEUAdgHfcCxgYjfwGRK9ToXdAHX6ZvzMzf4mP6IhOOBx1Pc96C0n9eUwDXDG1AvHkqPn0zeepLIYGn0dl9v2yCTmihWh3sjgRvqpYWBmNH5+/Kr8h3fDK6l7wOIfmzfSmq6PN2NZvL0jhMDZFgCB41UAt97nyO9w5Xr3Asj8lM2TW2h8T9QG7zAM8mChl20x7vgw3jPsLcdNZeuBo79ZVp+1KQlnmR53hwqt5gSmp31Bxnm3YnNhz22HNbI6ZH3znlMrd465R+gNhYLKvdBjm/70Z1oo5LcHwcrB4xApYXzbAySNI1QijFGAhs7XZwrNLhDyGCBhkH8ezyNUNIYjFDGEUCmKAOaOTYheIDbTdhsGFd4iNCLr+W4eMIDQ0DD3iCo3RnJ9msdlwzgzSPe/r7pZjBIPnyIUInMTzlB9Z6hPDyLrJ8cTrU+q1wJF3Ml0RKBtS7iYfFT72lwLBjO3R1A2fvm1uRWrQVOBKmXJEzQ+1DKerH11ljfJgMdb1hu43Rfhac9d9Xy1KnVfnpaM1+oubHoxeJtcmXnNwIYvT9eifMWGe7U8DXRAKXS688ZaoztRtd3bIUx7dX7WfZTvHLMF5OU7+Zyfx7muafT6/D+H4muFcL5xiQAAAABJRU5ErkJggg=="
+                              alt="Frame 145-1-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title mb-2">音樂創作</h3>
+                            <p class="cardCategory-text">283 門課程</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="cardCategory">
+                          <div class="cardCategory-icon">
+                            <img class="me-5"
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALCSURBVHgB7Zs9ctNAFMf/u1B4aJL0MFZOgFsqlBpmwglIUsVU5Aaxb5DO6SCcIMxAjalozQm8HujjNAw0Wd7TWrKQHWJHiXetp9/MyrJ2/fH+evupfQrLcmQ38QcxrtCERgSLTboaTXKjrBxfV0leeSzG9F3j3BWTex1R/gXlf0cDA5yoMZZALVSqbWMquUs/9Ap5I8PEUOpTOsOp6t9U+P8CHNq3dOzc2Z1cPYb+ewc9dXZdgfkCtG1Ex3eUYlQDQ2mHPMIUM2YFcMZ/QfiuviwGc0T4V4DqGp9iUBBBFwpU2XgmgqvaGVMB2nYf1TY+JcYbe5S+yXvAMeSQ2eoE4H5ext138CDN2Zx5wB7kwYO6TIAY8tjlg0rG9r9pLC2RBrY0Gd+CVH4h1jSrkyvAA0SaWoF1neiUx7IAkrq/WTZYgCbksq0hHOlVoFl7AISjJ6u6MqG1Tr3GC57lsSyAcGoBEADHLym9gBcewjOtJ/TkJWd89zNWincPGPwADj64844HTwiiCrz/5k+EYBpBXyLcextge7gVLAJz321C0N3gYs/uy/5G21oEwt4zqgqv3Xn3E3nBCnqEYDzAh/FMEAL4Mp7xLkDrsT/jGe8jwcHPSUtvV288E1Qj6IN6Ngjh6GQTolQUxrqwA1MWlgUQTi0AphuPJTKqPQC83VwuQxZAbi+QVIErwW2Act2ggVQsBhqPkugKmTRYABdjYyAPw7an3eBHyKPPh1SAc8gjiSOarjwf2gtBewUMTtU2n0xHghpdSIEjybLTPG3LITMxqk1295niXOAA1e4RDDhoKof4sLnZ2aArsINqecJXLBw4mcdFknGAUYR1hNc7uXHvqZPriiwePA3sU3qO8MXg6f15kkoHT8/Dhdi0SN2n9OktuN3m0SQ3a10pf+OOw+cvc1eGk1dD6ZLyh5RGybxmyfD5vxORvbIKUYZvAAAAAElFTkSuQmCC"
+                              alt="Frame 146-5-icon">
+                          </div>
+                          <div>
+                            <h3 class="cardCategory-title">探索更多</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="index-teacher pt-20 pb-30 pt-lg-30 pb-lg-50">
+        <div class="container">
+          <h2 class="fs-1 mx-lg-auto title-deco mb-2">頂尖講師<br class="d-md-none">帶你飛</h2>
+          <p class="fs-6 fs-lg-7 text-gray-80 text-lg-center mb-6 mb-lg-10">
+          超真實學員評價，這些講師你絕對不能錯過！
+          </p>
+          <div class="swiper swiper-teacher mb-6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="cardTeacher">
+                  <img src="/web-layout-training-vite/assets/teacher-3-28b5c93a.png"
+                    alt="teacher-3-img"
+                    class="ps-15 ps-md-30 ps-lg-20 object-fit-cover w-auto">
+                  <div class="pe-6 pe-lg-8">
+                    <div class="cardTeacher-body bg-light">
+                      <h3 class="cardTeacher-title mb-6">Mr. Robert </h3>
+                      <div class="d-flex align-items-center mb-2">
+                        <p class="tag tag-gray fw-semibold me-1">
+                          音樂創作
+                        </p>
+                        <div class="rate">
+                          <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                          <p class="rate-text">4.0</p>
+                          <p class="rate-count">(333)</p>
+                        </div>
+                      </div>
+                      <p class="mb-6">
+                        Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。
+                      </p>
+                      <a href="#" class="btn btn-primary w-100">
+                        探索 Mr. Robert 的教學課程
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardTeacher">
+                  <img src="/web-layout-training-vite/assets/teacher-1-7be33f19.png"
+                    alt="teacher-1-img"
+                    class="ps-15 ps-md-30 ps-lg-20 object-fit-cover w-auto">
+                  <div class="pe-6 pe-lg-8">
+                    <div class="cardTeacher-body bg-light">
+                      <h3 class="cardTeacher-title mb-6">Kelly Beck</h3>
+                      <div class="d-flex align-items-center mb-2">
+                        <p class="tag tag-gray fw-semibold me-1">
+                          英文寫作
+                        </p>
+                        <div class="rate">
+                          <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                          <p class="rate-text">4.8</p>
+                          <p class="rate-count">(281)</p>
+                        </div>
+                      </div>
+                      <p class="mb-6">
+                        Kelly 的教學方式靈活，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。
+                      </p>
+                      <a href="#" class="btn btn-primary w-100">
+                        探索 Kelly Beck 的教學課程
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardTeacher">
+                  <img src="/web-layout-training-vite/assets/teacher-2-8d68dd20.png"
+                    alt="teacher-2-img"
+                    class="ps-15 ps-md-30 ps-lg-20 object-fit-cover w-auto">
+                  <div class="pe-6 pe-lg-8">
+                    <div class="cardTeacher-body bg-light">
+                      <h3 class="cardTeacher-title mb-6">K. Lee</h3>
+                      <div class="d-flex align-items-center mb-2">
+                        <p class="tag tag-gray fw-semibold me-1">
+                          音樂創作
+                        </p>
+                        <div class="rate">
+                          <img class="rate-star" src="/web-layout-training-vite/assets/ic_star-b163c07b.svg" alt="icon-star">
+                          <p class="rate-text">4.0</p>
+                          <p class="rate-count">(333)</p>
+                        </div>
+                      </div>
+                      <p class="mb-6">
+                        K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！
+                      </p>
+                      <a href="#" class="btn btn-primary w-100">
+                        探索 K. Lee 的教學課程
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-teacher position-static"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark py-12 py-lg-25 rounded-top-8">
+  <div class="container">
+    <div class="px-4 px-lg-0">
+      <div class="d-md-flex align-items-md-end justify-content-md-between mb-10">
+        <a href="#">
+          <img class="footer__img object-fit-cover mb-10 mb-md-0"
+            src="data:image/png;base64,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"
+            alt="logo-white-img">
+        </a>
+        <ul class="list-unstyled d-md-flex align-items-md-center mb-0">
+          <li class="mb-6 mb-md-0 me-md-8">
+            <a href="#" class="fs-8 text-light">常見問題</a>
+          </li>
+          <li class="mb-6 mb-md-0 me-md-8">
+            <a href="#" class="fs-8 text-light">關於我們</a>
+          </li>
+          <li class="mb-6 mb-md-0 me-md-8">
+            <a href="#" class="fs-8 text-light">隱私權政策</a>
+          </li>
+          <li>
+            <a href="#" class="fs-8 text-light">使用者條款</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-md-flex align-items-md-end justify-content-md-between">
+        <ul class="list-unstyled d-flex align-items-center mb-8 mb-md-0 order-md-2">
+          <li class="me-4">
+            <a href="#" class="footer__icon text-light">
+              <img src="/web-layout-training-vite/assets/line-icon-0d33df5c.svg" alt="line-icon">
+            </a>
+          </li>
+          <li class="me-4">
+            <a href="#" class="footer__icon text-light">
+              <img src="/web-layout-training-vite/assets/youtube-303faedc.svg" alt="yt-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__icon text-light">
+              <img src="/web-layout-training-vite/assets/fb-icon-bbde21e9.svg" alt="fb-icon">
+            </a>
+          </li>
+        </ul>
+        <p class="fs-9 text-light order-md-1">
+          copyright © 2024 課程網站 All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>    
+    
+  </body>
+</html>
