@@ -794,6 +794,14 @@ $utilities: map-merge(
       class: transition,
       values: $transitions,
     ),
+    'scale': (
+      property: 'transform',
+      state: hover,
+      class: scale,
+      values: (
+        1: scale(1.2),
+      ),
+    ),
     // scss-docs-end utils-zindex
   ),
 );
