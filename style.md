@@ -65,6 +65,7 @@ values: (
   2: var(--#{$prefix}border-radius),
   3: var(--#{$prefix}border-radius-lg), //12px
   4: var(--#{$prefix}border-radius-xl),
+  45: 1.25rem, // 20px
   5: var(--#{$prefix}border-radius-xxl),
   6: 100px,
   7: 2.5rem, //40px

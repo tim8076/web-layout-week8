@@ -80,10 +80,12 @@ $utilities: map-merge(
       property: box-shadow,
       class: shadow,
       state: hover,
+      responsive: true,
       values: (
         null: var(--#{$prefix}box-shadow),
         sm: var(--#{$prefix}box-shadow-sm),
         lg: var(--#{$prefix}box-shadow-lg),
+        custom: 0px 25px 50px -12px #0000001F,
         none: none,
       )
     ),
@@ -99,6 +101,7 @@ $utilities: map-merge(
     // scss-docs-start utils-position
     "position": (
       property: position,
+      responsive: true,
       values: static relative absolute fixed sticky
     ),
     "top": (
@@ -123,6 +126,7 @@ $utilities: map-merge(
     "translate-middle": (
       property: transform,
       class: translate-middle,
+      responsive: true,
       values: (
         null: translate(-50%, -50%),
         x: translateX(-50%),

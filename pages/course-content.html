@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>課程內容</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  </head>
+  <body>
+    <%- include('./layout/header', { isLogin: "false" }); -%>
+    <main>
+      <section class="bg-gray-10">
+        <div class="bg-semi-oval pt-6 pb-10 pt-lg-20 pb-lg-40">      
+          <div class="container position-relative z-index-1">
+            <nav class="mb-4 mb-lg-12" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item position-relative z-index-1">
+                  <a href="#">所有課程</a>
+                </li>
+                <li class="breadcrumb-item position-relative z-index-1">
+                  <a href="#">程式</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  網頁前端
+                </li>
+              </ol>
+            </nav>
+            <div class="row">
+              <div class="col-lg-7 mb-6 mb-lg-0">
+                <img class="object-fit-cover rounded-45 h-100"
+                  src="../assets/images/hero-4.png"
+                  alt="hero-img">
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-column h-100">
+                  <ul class="list-unstyled mb-4 mb-lg-6 d-flex align-items-center">
+                    <li class="me-2">
+                      <a href="#" class="tag tag-primary fw-semibold">程式開發</a>
+                    </li>
+                    <li class="me-2">
+                      <a href="#" class="tag tag-primary fw-semibold">小白友善</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag tag-primary fw-semibold">網站設計</a>
+                    </li>
+                  </ul>
+                  <h1 class="fs-3 fs-lg-1 mb-2 mb-lg-4">使用 HTML、CSS 開發一個網站</h1>
+                  <p class="fs-8 fs-md-7 mb-2 mb-md-4">
+                    為你打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助你成就更好的自己！
+                  </p>
+                  <p class="fs-8 fs-md-7 mb-6">
+                    <span class="fw-semibold">16,390 人</span>
+                    已註冊
+                  </p>
+                  <div class="mt-md-auto">
+                    <a href="#" class="btn btn-outline-primary">
+                      <span class="material-symbols-rounded fs-5">bookmark</span>
+                      收藏課程
+                    </a>
+                    <a href="#" class="btn btn-light">
+                      <span class="material-symbols-rounded fs-5">share</span>
+                      分享課程
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </section>
+      <section class="pt-4 pb-6 bg-gray-10 position-relative py-lg-0">
+        <div class="container position-lg-absolute top-0 start-50 translate-middle-lg">
+          <div class="row">
+            <div class="col">
+              <div class="p-4 rounded-45 bg-light border-gray-40 py-lg-6 px-lg-3 shadow-custom">
+                <ul class="row list-unstyled mb-0">
+                  <li class="col-md-6 col-xl-3">
+                    <div class="p-6">
+                      <div class="d-flex mb-2">
+                        <img src="../assets/images/icons/ic_ hexschool.png"
+                          alt="ic_ hexschool-img"
+                          class="me-1 mb-2"
+                          width="24"
+                          height="24">
+                        <h2 class="fs-7 fs-lg-6">六角學院</h2>
+                      </div>
+                      <p class="fs-8 fs-md-7">高雄最大線上程式開發學習單位</p>
+                    </div>
+                  </li>
+                  <li class="col-md-6 col-xl-3">
+                    <div class="p-6">
+                      <div class="rate mb-2">
+                        <img class="rate-star w-16p h-16p w-lg-24p h-lg-24p"
+                          src="../assets/images/icons/ic_star.svg"
+                          alt="icon-star">
+                        <p class="rate-text fs-7 fs-md-6">4.9</p>
+                      </div>
+                      <p class="fs-8 fs-md-7">13,208 條評論</p>
+                    </div>
+                  </li>
+                  <li class="col-md-6 col-xl-3">
+                    <div class="p-6">
+                      <p class="fs-7 fs-lg-6 mb-2 fw-semibold">3 時 25 分</p>
+                      <p class="fs-8 fs-md-7">16 個單元，4 個課後學習作業</p>
+                    </div>
+                  </li>
+                  <li class="col-md-6 col-xl-3">
+                    <div class="p-6">
+                      <p class="tag tag-primary mb-2 fw-semibold">
+                        前端開發類別排名第一名 🔥
+                      </p>
+                      <p class="fs-8 fs-md-7">16,390 人已註冊</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="bg-gray-10 pt-lg-35">
+          <div class="container px-0 px-md-3">
+            <ul class="nav mb-10 mb-lg-20 border-bottom border-gray-40">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">預計單元</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">關於講師</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">購課前問答</a>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 pb-30 pb-lg-40">
+                <div class="d-flex align-items-center pb-4 pb-lg-6">
+                  <img class="w-lg-24p h-lg-24p me-1 me-lg-2"
+                    src="../assets/images/deco/flower-5-svg.svg"
+                    alt="flower-png">
+                  <h2 class="fs-6 fs-lg-5">課程介紹</h2>
+                </div>
+                <div class="bg-light px-3 py-4 p-md-6 px-lg-8 rounded-45-lg mx-n3 mx-md-0">
+                  <picture class="mb-6 mb-lg-8 d-block">
+                    <source media="(min-width:992px)"
+                      srcset="../assets/images/course-detail-1.png">
+                    <img src="../assets/images/course-sm-detail-1.png"
+                      alt="course-sm-detail-1-img"
+                      class="w-100">
+                  </picture>
+                  <h3 class="title-deco-left ps-3 fs-7 mb-2 mb-lg-4">
+                    入門前端網頁設計從這裡開始，跨出你的第一步！
+                  </h3>
+                  <p class="mb-6 mb-lg-8">
+                    如果你也想要踏入前端的世界，歡迎你來到 Hahow 與六角學院合作的「前端網頁設計」課程組合，透過一系列前端語言的基礎課程，循序漸進的帶你進入網頁開發的世界。而這裡——就是你的第一步！
+                  </p>
+                  <div class="position-relative">
+                    <picture class="mb-6 mb-lg-8 d-block">
+                      <source media="(min-width:992px)"
+                        srcset="../assets/images/course-detail-2.png">
+                      <img src="../assets/images/course-sm-detail-2.png"
+                        alt="course-sm-detail-1-img"
+                        class="w-100">
+                    </picture>
+                    <h3 class="title-deco-left ps-3 fs-7 mb-2 mb-lg-4">
+                      網頁前端的入門磚，讓我們先從學習 HTML & CSS 開始！
+                    </h3>         
+                    <p>
+                      如果你也想要踏入前端的世界，歡迎你來到 Hahow 與六角學院合作的「前端網頁設計」課程組合，透過一系列前端語言的基礎課程，循序漸進的帶你進入網頁開發的世界。而這裡——就是你的第一步！
+                      如果你也想要踏入前端的世界，歡迎你來到 Hahow 與六角學院合作的「前端網頁設計」課程組合。
+                      <span class="d-none d-lg-block">
+                        語言的基礎課程，循序漸進的帶你進入網頁開發的世界。而這裡——就是你的第一步！
+                        如果你也想要踏入前端的世界，歡迎你來到 Hahow 與六角學院合作的「前端網頁設計」課程組合。
+                      </span>
+                    </p>
+                    <div class="position-absolute inset-0 d-flex justify-content-center align-items-end
+                      bg-gradient-2">
+                      <a href="#" class="btn btn-primary w-75 w-md-50 w-lg-33">
+                        展開更多
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-12">
+                  <div class="d-flex justify-content-between align-items-center mb-4 mb-lg-6">
+                    <div>
+                      <div class="d-flex align-items-center mb-2">
+                        <img class="w-lg-24p h-lg-24p me-1 me-lg-2"
+                          src="../assets/images/deco/flower-5-svg.svg"
+                          alt="flower-png">
+                        <h2 class="fs-6 fs-lg-5">預計單元</h2>
+                      </div>
+                      <p class="fs-8 fs-md-7">18 章 142 單元｜總時長 928 分鐘</p>
+                    </div>
+                    <a href="#" class="text-primary fw-semibold">全部展開</a>
+                  </div>
+                  <div data-course-list-container>
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h3 class="accordion-header">
+                          <button class="accordion-button d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="w-24p h-24p bg-gray-80 text-light d-flex justify-content-center align-items-center rounded-1 me-2">
+                              1
+                            </span>
+                            課前說明
+                            <p class="fs-8 position-absolute top-50 end-65p translate-middle-y
+                              d-none d-lg-block">
+                              4 個單元
+                              <span class="d-inline-block mx-2 w-6p h-6p bg-gray-60 rounded-circle"></span>
+                              少於一分鐘
+                            </p>
+                          </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show"   data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="list-unstyled m-0">
+                              <li class="text-gray-80">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
+                                  bg-primary-10-hover">
+                                  <div class="d-flex align-items-center">
+                                    <img src="../assets/images/icons/ic_video.svg"
+                                      alt="video-icon"
+                                      class="w-24p h-24p me-3">
+                                    <p>課程說明</p>
+                                  </div>
+                                  <div class="d-flex align-items-center ms-4">
+                                    <div class="py-1 px-2 bg-primary text-light rounded-2 fs-9 me-4">
+                                      試看單元
+                                    </div>
+                                    <p class="fs-7">00:10</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="text-gray-80">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
+                                  bg-primary-10-hover">
+                                  <div class="d-flex align-items-center">
+                                    <img src="../assets/images/icons/ic_video.svg"
+                                      alt="video-icon"
+                                      class="w-24p h-24p me-3">
+                                    <p>課程最終任務說明</p>
+                                  </div>
+                                  <div class="d-flex align-items-center ms-4">
+                                    <p class="fs-7">00:10</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="text-gray-80">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
+                                  bg-primary-10-hover">
+                                  <div class="d-flex align-items-center">
+                                    <img src="../assets/images/icons/ic_video.svg"
+                                      alt="video-icon"
+                                      class="w-24p h-24p me-3">
+                                    <p>課程說明</p>
+                                  </div>
+                                  <div class="d-flex align-items-center ms-4">
+                                    <p class="fs-7">00:10</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="text-gray-80">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
+                                  bg-primary-10-hover">
+                                  <div class="d-flex">
+                                    <img src="../assets/images/icons/ic_video.svg"
+                                      alt="video-icon"
+                                      class="w-24p h-24p me-3">
+                                    <p>Hahow 學生如何在六角平台檢視問題</p>
+                                  </div>
+                                  <div class="d-flex align-items-center ms-4">
+                                    <p class="fs-7">00:10</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="text-gray-80">
+                                <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
+                                  bg-primary-10-hover">
+                                  <div class="d-flex align-items-center">
+                                    <img src="../assets/images/icons/ic_video.svg"
+                                      alt="video-icon"
+                                      class="w-24p h-24p me-3">
+                                    <p>課業作業</p>
+                                  </div>
+                                  <div class="d-flex align-items-center ms-4">
+                                    <p class="fs-7">00:10</p>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-12">
+                  <div class="d-flex align-items-center mb-4 mb-lg-6">
+                    <img class="w-lg-24p h-lg-24p me-1 me-lg-2"
+                      src="../assets/images/deco/flower-5-svg.svg"
+                      alt="flower-png">
+                    <h2 class="fs-5">關於講師</h2>
+                  </div>
+                  <div class="bg-light p-4 p-md-8 rounded-45 d-flex flex-column">
+                    <div class="pb-6 pb-lg-10 border-bottom mb-6 mb-lg-10">
+                      <div class="d-flex align-items-center mb-4">
+                        <img src="../assets/images/icons/icon-hexschool-svg.svg"
+                          class="w-60p h-60p w-lg-80p h-lg-80p me-1 me-lg-4"
+                          alt="ic_ hexschool-icon">
+                        <div>
+                          <h3 class="fs-7 fs-lg-6 mb-2">六角學院</h3>
+                          <p class="fs-8 fs-md-7 mb-md-4">
+                            打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。
+                          </p>
+                          <ul class="nav-row text-gray-80 d-none d-md-flex">
+                            <li class="nav-row-item fs-8 fs-md-7 ps-0">
+                              2 堂課程
+                            </li>
+                            <li class="nav-row-item fs-8 fs-md-7">
+                              1,567 個學生
+                            </li>
+                            <li class="nav-row-item fs-8 fs-md-7">
+                              1,034 則評論
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ul class="nav-row text-gray-80 d-md-none">
+                        <li class="nav-row-item fs-8 fs-md-7 ps-0">
+                          2 堂課程
+                        </li>
+                        <li class="nav-row-item fs-8 fs-md-7">
+                          1,567 個學生
+                        </li>
+                        <li class="nav-row-item fs-8 fs-md-7">
+                          1,034 則評論
+                        </li>
+                      </ul>                
+                    </div>
+                    <p class="fs-8 fs-md-7 mb-4 text-gray-80">
+                      六角學院是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+                    </p>
+                    <p class="fs-8 fs-md-7 mb-4 text-gray-80 mb-6 mb-lg-10">
+                      我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
+                    </p>
+                    <a href="#" class="text-primary d-inline-flex align-items-center ms-auto">
+                      了解更多講師履歷
+                      <span class="material-symbols-outlined ms-1">chevron_right</span>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center mb-4 mb-lg-6">
+                    <img class="w-lg-24p h-lg-24p me-1 me-lg-2"
+                      src="../assets/images/deco/flower-5-svg.svg"
+                      alt="flower-png">
+                    <h2 class="fs-5">購課前問答</h2>
+                  </div>
+                  <div class="bg-light p-4 p-md-8 rounded-45 d-md-flex mb-4">
+                    <img class="d-none d-md-block object-fit-cover w-60p h-60p me-6"
+                        src="../assets/images/avatar-3.png"
+                        alt="avatar-3-img">
+                    <div class="avatar d-md-none mb-4">
+                      <img class="avatar-img avatar-img-lg object-fit-cover"
+                        src="../assets/images/avatar-3.png"
+                        alt="avatar-3-img">
+                      <h3 class="avatar-title text-dark fw-semibold">Jessica</h3>
+                    </div>
+                    <form class="flex-md-grow-1" action="index.html">
+                      <textarea class="form-control fs-8 fs-md-7 mb-4" rows="3"
+                        placeholder="上課前有什麼疑問嗎？ 在這裡盡情詢問講師！"
+                        name="questions"></textarea>
+                      <div class="d-md-flex justify-content-md-between">
+                        <div class="d-flex align-items-center mb-2 mb-md-0">
+                          <img src="../assets/images/deco/flower-5-svg.svg"
+                            class="w-16p h-16p me-3 me-md-2"
+                            alt="flower-5-img">
+                          <p class="fs-8">
+                            提問之前也別忘了看看其他同學有沒有跟你有相同的問題哦
+                          </p>
+                        </div>
+                        <input type="submit" value="送出" class="btn btn-gray disabled w-100 w-md-auto p-3">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="bg-light p-4 p-md-8 rounded-45 d-md-flex mb-4">
+                    <img class="d-none d-md-block object-fit-cover w-60p h-60p me-6"
+                        src="../assets/images/avatar-4.png"
+                        alt="avatar-4-img">
+                    <div class="avatar d-md-none mb-4">
+                      <img class="avatar-img avatar-img-lg object-fit-cover"
+                        src="../assets/images/avatar-4.png"
+                        alt="avatar-4-img">
+                      <div>
+                        <h3 class="avatar-title text-dark fw-semibold">Brian</h3>
+                        <p class="fs-8 text-gray-60">2024-01-30</p>
+                      </div>
+                    </div>
+                    <div class="flex-md-grow-1">
+                      <div class="d-none d-md-block mb-4">
+                        <h3 class="avatar-title text-dark fw-semibold">Brian</h3>
+                        <p class="fs-8 text-gray-60">2024-01-30</p>
+                      </div>
+                      <p class="fs-8 fs-md-7 text-gray-80 mb-4">
+                        老師您好，想問您: <br>
+                        1. 課程是用MAC作業系統，只使用Windows作業系統的同學會有學習上的問題嗎~ <br>
+                        2. 此課程在Udemy、好好學校、六角學院購買會有什麼不一樣嗎~
+                      </p>
+                      <div class="p-4 bg-gray-10 rounded-45">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fs-7 me-2">六角學院</h3>
+                          <p class="rounded-2 text-primary border border-primary px-2 py-1 fs-9">授課老師</p>
+                        </div>
+                        <p class="fs-8 text-gray-60 mb-4 mb-md-6">2024-01-30</p>
+                        <p class="fs-8 fs-md-7 text-gray-80">
+                          嗨嗨 Brian <br>
+                          <span class="mb-2 d-block">我是六角學院助教 Bingbingboom</span> <br>
+                          關於同學的問題：<br>
+                          1. 使用 Windows 系統是可以的，沒有問題哩 <br>
+                          <span class="mb-2 d-block">2. 課程內容都是相同的哦 ～</span> <br>
+                          若有問題歡迎再次發問 :D
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-light p-4 p-md-8 rounded-45 d-md-flex mb-4">
+                    <img class="d-none d-md-block object-fit-cover w-60p h-60p me-6"
+                        src="../assets/images/avatar-5.svg"
+                        alt="avatar-5-img">
+                    <div class="avatar d-md-none mb-4">
+                      <img class="avatar-img avatar-img-lg object-fit-cover"
+                        src="../assets/images/avatar-5.svg"
+                        alt="avatar-5-img">
+                      <div>
+                        <h3 class="avatar-title text-dark fw-semibold">Sandy</h3>
+                        <p class="fs-8 text-gray-60">2023-12-29</p>
+                      </div>
+                    </div>
+                    <div class="flex-md-grow-1">
+                      <div class="d-none d-md-block mb-4">
+                        <h3 class="avatar-title text-dark fw-semibold">Sandy</h3>
+                        <p class="fs-8 text-gray-60">2023-12-29</p>
+                      </div>
+                      <p class="fs-8 fs-md-7 text-gray-80 mb-4">
+                        您好，這個課程跟六角網站上的課程是一樣的嗎?
+                      </p>
+                      <div class="p-4 bg-gray-10 rounded-45">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fs-7 me-2">六角學院</h3>
+                          <p class="rounded-2 text-primary border border-primary px-2 py-1 fs-9">授課老師</p>
+                        </div>
+                        <p class="fs-8 text-gray-60 mb-4 mb-md-6">2024-01-30</p>
+                        <p class="fs-8 fs-md-7 text-gray-80">
+                          嗨嗨 Sandy <br>
+                          <span class="mb-2 d-block">我是六角學院助教 Bingbingboom</span> <br>
+                          對的，這部分因為字幕問題還沒有更新<br>
+                          <span class="mb-2 d-block">後續等字幕用好了就會更新哩！</span> <br>
+                          若有問題歡迎再次發問 :D
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-light p-4 p-md-8 rounded-45 d-md-flex mb-4 mb-md-6">
+                    <img class="d-none d-md-block object-fit-cover w-60p h-60p me-6"
+                        src="../assets/images/avatar-6.svg"
+                        alt="avatar-6-img">
+                    <div class="avatar d-md-none mb-4">
+                      <img class="avatar-img avatar-img-lg object-fit-cover"
+                        src="../assets/images/avatar-6.svg"
+                        alt="avatar-5-img">
+                      <div>
+                        <h3 class="avatar-title text-dark fw-semibold">Tim</h3>
+                        <p class="fs-8 text-gray-60">2024-01-30</p>
+                      </div>
+                    </div>
+                    <div class="flex-md-grow-1">
+                      <div class="d-none d-md-block mb-4">
+                        <h3 class="avatar-title text-dark fw-semibold">Tim</h3>
+                        <p class="fs-8 text-gray-60">2024-01-30</p>
+                      </div>
+                      <p class="fs-8 fs-md-7 text-gray-80 mb-4">
+                        助教你好，我本身是一位插畫家，想轉往數位的方向發展。目前想做兩種網站，一個是類似這種的簡易landing page，用來介紹我的插畫品牌以及作品或故事等等：https://glory.taipei/#articleSection1 <br>
+                        另一個是數位繪本的形式，像是這個網站，可以利用滑鼠的點擊、拖曳、hold等功能跟網頁做互動：https://2019.makemepulse.com/請問這堂課學完試可以製作這兩種網頁的嗎？
+                      </p>
+                      <div class="p-4 bg-gray-10 rounded-45">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fs-7 me-2">六角學院</h3>
+                          <p class="rounded-2 text-primary border border-primary px-2 py-1 fs-9">授課老師</p>
+                        </div>
+                        <p class="fs-8 text-gray-60 mb-4 mb-md-6">2024-01-31</p>
+                        <p class="fs-8 fs-md-7 text-gray-80">
+                          嗨嗨 Tim <br>
+                          <span class="mb-2 d-block">我是六角學院助教 Bingbingboom</span> <br>
+                          若是第一種單純呈現圖片、文字、靜態的樣式排版學習完 HTML/CSS 課程是可以成功製作出來的<br>
+                          <span class="mb-2 d-block">若是想要製作互動功能、滾動視差、動畫效果會建議再深入學習 jQuery、Javascript 相關的課程，瞭解如何使用程式讓使用者與網頁中的元素做互動哦</span> <br>
+                          若有問題歡迎再次發問 :D
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="pagination gap-2 mb-0 justify-content-center justify-content-lg-end">
+                      <li class="page-item disabled">
+                        <a class="page-link fs-5" href="#">&laquo;</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link fs-5" href="#">&lt;</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link active" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">...</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">10</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link fs-5" href="#">&gt;</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link fs-5" href="#">&raquo;</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="d-none d-lg-block col-lg-4">
+                <div class="rounded-45 bg-light py-6 px-4">
+                  <h4 class="fs-7 pb-4 border-bottom border-gray-40 mb-6">購買本堂課</h4>
+                  <p class="tag tag-alert fw-semibold mb-6">限定優惠 75 折</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="fs-3 me-2 fw-semibold">NT$ 3,375</p>
+                    <p class="text-gray-60 text-decoration-line-through">NT$ 4,500</p>
+                  </div>
+                  <p class="text-gray-80 mb-6">16,390 人已註冊</p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-primary flex-grow-1 me-4">立即購買</a>
+                    <a href="#" class="btn btn-outline-primary flex-shrink-0 p-4">
+                      <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/course-content.js"></script>
+  </body>
+</html>
