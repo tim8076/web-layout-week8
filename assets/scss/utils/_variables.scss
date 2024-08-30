@@ -468,6 +468,7 @@ $custom-spacer: (
   16p: 16px,
   24p: 24px,
   60p: 60px,
+  65p: 65px,
   80p: 80px,
   auto: auto,
   fit-content: fit-content,
@@ -1171,6 +1172,14 @@ $zindex-tooltip:                    1080 !default;
 $zindex-toast:                      1090 !default;
 // scss-docs-end zindex-stack
 
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  fixed: $zindex-fixed,
+);
 
 // Navs
 
