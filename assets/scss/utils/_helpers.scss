@@ -68,4 +68,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  &-lg::before {
+    @include media-breakpoint-up(lg) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }
