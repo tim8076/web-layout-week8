@@ -470,6 +470,7 @@ $custom-spacer: (
   60p: 60px,
   65p: 65px,
   80p: 80px,
+  112p: 112px,
   200p: 200px,
   240p: 240px,
   auto: auto,
@@ -1181,6 +1182,7 @@ $zindex-levels: (
   2: 2,
   3: 3,
   fixed: $zindex-fixed,
+  pop: $zindex-popover,
 );
 
 // Navs

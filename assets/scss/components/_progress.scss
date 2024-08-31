@@ -1,0 +1,43 @@
+.progress-list {
+  display: flex;
+  align-items: center;
+  
+  &-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 4.5rem;
+    }
+
+    &.active ~ li .progress-list-num{
+      background-color: $gray-60;
+    }
+
+    & ~ li::before {
+      content: '';
+      position: absolute;
+      left: -56px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 1px;
+      background-color: $gray-60;
+    }
+  }
+
+  &-num {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    color: $light;
+  }
+}

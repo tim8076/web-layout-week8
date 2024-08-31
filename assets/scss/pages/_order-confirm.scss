@@ -1,0 +1,25 @@
+.ckeck-modal {
+  .modal-dialog {
+    top: auto;
+    bottom: 90px;
+  }
+
+  .modal-content {
+    border-radius: 12px 12px 0 0;
+  }
+
+  &.fade .modal-dialog {
+    transform: translateY(100%);
+  }
+  &.show .modal-dialog {
+    transform: translateY(0);
+  }
+}
+
+.icon-arrow {
+  transition: $transition-base;
+}
+
+.icon-arrow.open {
+  transform: rotate(180deg);
+}
