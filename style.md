@@ -61,7 +61,7 @@ $light:       #fff;
 values: (
   null: var(--#{$prefix}border-radius),
   0: 0,
-  1: var(--#{$prefix}border-radius-sm),
+  1: var(--#{$prefix}border-radius-sm), //4px
   2: var(--#{$prefix}border-radius),
   3: var(--#{$prefix}border-radius-lg), //12px
   4: var(--#{$prefix}border-radius-xl),
