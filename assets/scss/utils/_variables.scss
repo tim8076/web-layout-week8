@@ -461,7 +461,9 @@ $spacers: (
 $custom-spacer: (
   25: 25%,
   33: 33.333%,
+  40: 40%,
   50: 50%,
+  60: 60%,
   75: 75%,
   100: 100%,
   6p: 6px,
@@ -487,6 +489,7 @@ $position-values: (
   50: 50%,
   100: 100%,
   110: 110%,
+  16p: 16px,
   65p: 65px,
 ) !default;
 // scss-docs-end position-map
