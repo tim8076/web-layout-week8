@@ -33,11 +33,12 @@
         </ul>
       </div>
     </div>
-    <div class="bg-gray-10 pb-2 pb-md-20 pb-lg-38">
+    <div class="bg-gray-10 pb-26 pb-lg-38">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <div class="border border-gray-40 rounded-md-3 bg-light">
+            <div class="border border-gray-40 rounded-md-3 bg-light"
+              data-product-section>
               <div class="py-4 px-3 px-md-6 border-bottom">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="selectAll" id="selectAll">
@@ -48,7 +49,7 @@
               </div>
               <div class="py-4 px-3 px-md-6 py-md-8">
                 <ul class="list-unstyled m-0">
-                  <li class="py-4 py-lg-8 border-bottom">
+                  <li class="py-4 py-lg-8 border-bottom" data-product="1">
                     <div class="form-check d-xl-flex justify-content-xl-between align-items-xl-center">
                       <input class="form-check-input"
                         type="checkbox"
@@ -65,11 +66,13 @@
                       </label>
                       <div class="d-flex justify-content-end flex-xl-column flex-shrink-0">
                         <a href="#" class="btn btn-light border-0 fw-normal text-lg-end">移至收藏</a>
-                        <a href="#" class="btn btn-light border-0 fw-normal">刪除</a>
+                        <a href="#" class="btn btn-light border-0 fw-normal" data-delete-btn="1">
+                          刪除
+                        </a>
                       </div>
                     </div>
                   </li>
-                  <li class="py-4 py-lg-8 border-bottom">
+                  <li class="py-4 py-lg-8 border-bottom" data-product="2">
                     <div class="form-check d-xl-flex justify-content-xl-between align-items-xl-center">
                       <input class="form-check-input"
                         type="checkbox"
@@ -88,13 +91,13 @@
                         <a href="#" class="btn btn-light border-0 fw-normal">
                           移至收藏
                         </a>
-                        <a href="#" class="btn btn-light border-0 fw-normal">
+                        <a href="#" class="btn btn-light border-0 fw-normal" data-delete-btn="2">
                           刪除
                         </a>
                       </div>
                     </div>
                   </li>
-                  <li class="py-4 py-lg-8">
+                  <li class="py-4 py-lg-8" data-product="3">
                     <div class="form-check d-xl-flex justify-content-xl-between align-items-xl-center">
                       <input class="form-check-input"
                         type="checkbox"
@@ -113,7 +116,7 @@
                         <a href="#" class="btn btn-light border-0 fw-normal">
                           移至收藏
                         </a>
-                        <a href="#" class="btn btn-light border-0 fw-normal">
+                        <a href="#" class="btn btn-light border-0 fw-normal" data-delete-btn="3">
                           刪除
                         </a>
                       </div>
@@ -122,20 +125,36 @@
                 </ul>
               </div>
             </div>
+            <div class="border border-gray-40 rounded-md-3 bg-light h-500p
+              d-none justify-content-center align-items-center"
+              data-no-product-section>
+              <div class="text-center">
+                <img src="../assets/images/empty.png"
+                  class="mb-6"
+                  alt="empty-img"
+                  width="150"
+                  height="155">
+                <p class="fw-semibold mb-6">購物車還沒有商品，立即逛逛！</p>
+                <a href="index.html" class="btn btn-primary px-20">前往首頁</a>
+              </div>
+            </div>
           </div>
           <div class="col-lg-4 d-none d-lg-block">
             <div class="bg-light rounded-45 p-6 shadow-custom">
               <h1 class="fs-5 mb-8">訂單明細</h1>
               <div class="d-flex justify-content-between pb-8 border-bottom">
                 <p class="text-gray-80">2 項課程小計</p>
-                <p class="fw-semibold">NT$ 3600</p>
+                <p class="fw-semibold" data-price>NT$ 3600</p>
               </div>
               <div class="pt-8">
                 <div class="d-flex justify-content-between align-items-end mb-8">
                   <p class="text-gray-80">總計</p>
-                  <p class="fw-semibold fs-3">NT$ 3,600</p>
+                  <p class="fw-semibold fs-3" data-price>NT$ 3,600</p>
                 </div>
-                <a href="order-info.html" class="btn btn-primary w-100 mb-4">前往結帳</a>
+                <a href="order-info.html" class="btn btn-primary w-100 mb-4"
+                  data-checkout-btn>
+                  前往結帳
+                </a>
                 <p class="fs-8">
                   確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。
                 </p>
@@ -155,9 +174,9 @@
           <span class="d-none" data-close-text>收合明細</span>
           <span class="material-symbols-outlined icon-arrow" data-icon-arow>keyboard_arrow_up</span>
         </a>
-        <p class="fs-6 fw-semibold">NT$ 3,600</p>
+        <p class="fs-6 fw-semibold" data-price>NT$ 3,600</p>
       </div>
-      <a href="order-info.html" class="btn btn-primary">前往結帳</a>
+      <a href="order-info.html" class="btn btn-primary" data-checkout-btn>前往結帳</a>
     </div>
     <div class="ckeck-modal modal fade" id="cart-modal" tabindex="-1">
       <div class="modal-dialog modal-fullscreen h-auto position-absolute">
@@ -170,12 +189,12 @@
             <div class="d-flex justify-content-between align-items-center
               fs-8 text-gray-80 pb-4 border-bottom">
               <p>2 項課程小計</p>
-              <p class="fw-semibold">NT$ 3600</p>
+              <p class="fw-semibold" data-price>NT$ 3600</p>
             </div>
             <div class="pt-4">
               <div class="d-flex justify-content-between align-items-center fs-8 text-gray-80 mb-6">
                 <p>總計</p>
-                <p class="fw-semibold fs-6">NT$ 3600</p>
+                <p class="fw-semibold fs-6" data-price>NT$ 3600</p>
               </div>
               <p class="fs-8 text-gray-80">
                 確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。

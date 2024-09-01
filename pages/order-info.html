@@ -269,7 +269,10 @@
                 <h2 class="fs-7 fs-lg-5 me-4">發票選項</h2>
               </div>
               <div class="py-4 px-6">
-                <a href="#" class="btn btn-outline-primary mb-6">帶入上次結帳資料</a>
+                <a href="#" class="btn btn-outline-primary mb-6"
+                  data-last-time-btn>
+                  帶入上次結帳資料
+                </a>
                 <div class="row gy-6 mb-6">
                   <div class="col-md-6">
                     <label for="name"
@@ -279,7 +282,8 @@
                     <input type="text"
                       class="form-control"
                       id="name"
-                      placeholder="請填寫真實姓名">
+                      placeholder="請填寫真實姓名"
+                      data-input-name>
                   </div>
                   <div class="col-md-6">
                     <label for="email"
@@ -299,12 +303,13 @@
                     <select class="form-select mb-2"
                       id="invoice-type"
                       aria-label="Default select example">
-                      <option value="電子發票" selected>電子發票</option>
+                      <option disabled selected value> - 選擇發票類型 - </option>
+                      <option value="電子發票">電子發票</option>
                       <option value="統編發票">統編發票</option>            
                     </select>
                     <p class="title-flower-deco">如需開立統編，請選擇統編發票</p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 d-none" data-input-invoice-get>
                     <label for="invoice-get"
                       class="form-label">
                       領取方式 <span class="text-alert">*</span>
@@ -312,19 +317,20 @@
                     <select class="form-select mb-2"
                       id="invoice-get"
                       aria-label="Default select example">
-                      <option value="save-in-account" selected>
+                      <option disabled selected value> - 選擇領取方式 - </option>
+                      <option value="save-in-account">
                         存在 Learning 中，中獎寄信通知
                       </option>
                       <option value="save-in-phone">
                         手機條碼載具
                       </option>
-                      <option value="save-in-phone">
+                      <option value="save-in-person">
                         自然人憑證
                       </option>             
                     </select>
                   </div>
                 </div>
-                <div class="d-none">
+                <div class="d-none" data-section-barcode>
                   <label for="phone"
                     class="form-label">
                     手機載具條碼
@@ -334,7 +340,7 @@
                     id="phone"
                     placeholder="前面加上 / ，加上 7 個數字及大寫字母字元">
                 </div>
-                <div class="d-none row gy-6">
+                <div class="d-none row gy-6" data-section-invoice>
                   <div class="col-md-6">
                     <label for="company-name"
                       class="form-label">
