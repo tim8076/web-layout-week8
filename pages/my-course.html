@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
   </head>
   <body class="pt-16 pt-lg-0">
-    <%- include('./layout/header', { isLogin: "false" }); -%>
+    <%- include('./layout/header', {
+        isLogin: "true",
+        bgColor: "bg-gray-10"
+      });
+    -%>
     <main>
       <section class="bg-gray-10 py-10 py-md-20">
         <div class="container">

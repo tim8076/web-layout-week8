@@ -53,17 +53,19 @@
 }
 
 .index-buy {
-  position: relative;
-  @include media-breakpoint-up(lg) {
-    &::before {
-      content: '';
-      position: absolute;
-      left: -12%;
-      top: 215px;
-      background-image: url('../images/deco/flower-3.png');
-      background-repeat: no-repeat;
-      width: 480px;
-      height: 480px;
+  .bg-deco {
+    position: relative;
+    @include media-breakpoint-up(lg) {
+      &::before {
+        content: '';
+        position: absolute;
+        left: -12%;
+        top: 215px;
+        background-image: url('../images/deco/flower-3.png');
+        background-repeat: no-repeat;
+        width: 480px;
+        height: 480px;
+      }
     }
   }
 }

@@ -18,6 +18,27 @@
 
   .dropdow-info .dropdown-menu {
     width: 320px;
+    top: 145%;
+    left: -400%;
+    @include media-breakpoint-up(lg) {
+      top: 170%;
+      left: -260%;
+    }
+  }
+
+  .dropdow-member .dropdown-menu {
+    width: 238px;
+    top: 170%;
+    left: -55%;
+  }
+
+  .dropdow-member .dropdown-item {   
+    &:hover span{
+      color: $light;
+    }
+    span {
+      color: $gray-60;
+    }
   }
   
   &__search{

@@ -109,7 +109,8 @@ const cardListDesk = document.querySelector('[data-course-list-desk]');
 let str = '';
 for(let i = 0; i < 10; i++) {
   str += `
-    <li class="cardCourse mb-6">
+    <li class="cardCourse mb-6 position-relative">
+      <a href="course-content.html" class="stretched-link"></a>
       <div class="position-relative me-2 flex-shrink-0">
         <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
         <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
@@ -152,7 +153,7 @@ for(let i =0; i < 5; i++) {
   str2 += `
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-4.png"
             class="card-img-top"
@@ -191,7 +192,7 @@ for(let i =0; i < 5; i++) {
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-5.png"
             class="card-img-top"
@@ -230,7 +231,7 @@ for(let i =0; i < 5; i++) {
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-6.png"
             class="card-img-top"
@@ -266,7 +267,7 @@ for(let i =0; i < 5; i++) {
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-7.png"
             class="card-img-top"

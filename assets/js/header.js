@@ -28,6 +28,9 @@ const phoneSecondMenuList = [
 // 手機版選單
 const phoneMenu = document.querySelector('[data-phone-menu]');
 const phoneHeader = document.querySelector('[data-phone-header]');
+const phoneLoginButtons = document.querySelectorAll('[data-login-button]');
+const phoneLoginSection = document.querySelectorAll('[data-login-section]');
+
 const renderPhoneMenu = () => {
   phoneHeader.innerHTML = `
     <h3 class="offcanvas-title title">探索全部</h3>
@@ -54,10 +57,10 @@ const renderPhoneSecondMenu = () => {
     <h3 class="offcanvas-title title mx-auto">所有程式</h3>
   `;
   let str = '';
-  phoneSecondMenuList.forEach(item => {
+  phoneSecondMenuList.forEach((item,index) => {
     str += `
     <li>
-      <a href="#second-menu" class="dropdown-item" data-open-menu="2">
+      <a href="course-list.html" class="dropdown-item" data-open-menu="2">
         ${item}
       </a>
     </li>`
@@ -65,9 +68,19 @@ const renderPhoneSecondMenu = () => {
   phoneMenu.innerHTML = str;
 }
 
+phoneLoginButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    phoneLoginButtons.forEach(button => {
+      button.classList.toggle('active');
+    })
+    phoneLoginSection.forEach(section => {
+      section.classList.toggle('d-none');
+    })
+  })
+})
+
 phoneHeader.addEventListener('click', (e) => {
   if (e.target.dataset.openMenu === '1') {
-    console.log(1)
     renderPhoneMenu();
   }
 })

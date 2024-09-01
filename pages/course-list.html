@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
   </head>
   <body class="pt-16 pt-lg-0">
-    <%- include('./layout/header', { isLogin: "false" }); -%>
+    <%- include('./layout/header', {
+        isLogin: "true",
+        bgColor: "bg-light"
+      });
+    -%>
     <main>
       <section class="course-list-nav bg-gray-10 py-10 py-lg-20">
         <div class="container">
@@ -86,7 +90,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="../assets/images/course-4.png"
                       class="card-img-top"
@@ -125,7 +129,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="../assets/images/course-5.png"
                       class="card-img-top"
@@ -164,7 +168,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="../assets/images/course-6.png"
                       class="card-img-top"
@@ -203,7 +207,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="../assets/images/course-7.png"
                       class="card-img-top"
@@ -239,7 +243,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="../assets/images/course-8.png"
                       class="card-img-top"
@@ -359,7 +363,7 @@
           <ul class="row list-unstyled gy-4">
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="../assets/images/teacher-4.png"
                     class="card-img-top" alt="teacher-4-image">
@@ -380,7 +384,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="../assets/images/teacher-5.png"
                     class="card-img-top" alt="teacher-5-image">
@@ -401,7 +405,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="../assets/images/teacher-6.png"
                     class="card-img-top" alt="teacher-6-image">
@@ -422,7 +426,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="../assets/images/teacher-7.png"
                     class="card-img-top" alt="teacher-7-image">
@@ -503,7 +507,7 @@
           <ul class="row gy-6 list-unstyled mb-10 d-none d-md-flex" data-course-list-desk>
             <li class="col-md-4 col-lg-4 col-xl-3">
               <div class="card cardCourseBuy">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-content.html" class="stretched-link"></a>
                 <div class="position-relative overflow-hidden">
                   <img src="../assets/images/course-4.png"
                     class="card-img-top"

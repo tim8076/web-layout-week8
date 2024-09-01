@@ -715,6 +715,7 @@ $utilities: map-merge(
     ),
     "pointer-events": (
       property: pointer-events,
+      responsive: true,
       class: pe,
       values: none auto,
     ),
