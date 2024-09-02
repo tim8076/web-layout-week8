@@ -1,10 +1,12 @@
 import data from './data.js';
-
+import videoIcon from '../images/icons/ic_video.svg';
 const courseContainer = document.querySelector('[data-course-list-container]');
 const courseData = data.courseChapterData;
 
+
 const renderCourse = () => {
   let str = '';
+  
   courseData.forEach((item, index) => {
     const { list } = item;
     str += `
@@ -37,7 +39,7 @@ const renderCourse = () => {
                   <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
                     bg-primary-10-hover">
                     <div class="d-flex align-items-center">
-                      <img src="../assets/images/icons/ic_video.svg"
+                      <img src="${videoIcon}"
                         alt="video-icon"
                         class="w-24p h-24p me-3">
                       <p>${list[0].name}</p>
@@ -54,7 +56,7 @@ const renderCourse = () => {
                   <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
                     bg-primary-10-hover">
                     <div class="d-flex align-items-center">
-                      <img src="../assets/images/icons/ic_video.svg"
+                      <img src="${videoIcon}"
                         alt="video-icon"
                         class="w-24p h-24p me-3">
                       <p>${list[1].name}</p>
@@ -68,7 +70,7 @@ const renderCourse = () => {
                   <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
                     bg-primary-10-hover">
                     <div class="d-flex align-items-center">
-                      <img src="../assets/images/icons/ic_video.svg"
+                      <img src="${videoIcon}"
                         alt="video-icon"
                         class="w-24p h-24p me-3">
                       <p>${list[2].name}</p>
@@ -82,7 +84,7 @@ const renderCourse = () => {
                   <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
                     bg-primary-10-hover">
                     <div class="d-flex">
-                      <img src="../assets/images/icons/ic_video.svg"
+                      <img src="${videoIcon}"
                         alt="video-icon"
                         class="w-24p h-24p me-3">
                       <p>${list[3].name}</p>
@@ -96,7 +98,7 @@ const renderCourse = () => {
                   <a href="#" class="d-flex justify-content-between align-items-center px-6 py-4
                     bg-primary-10-hover">
                     <div class="d-flex align-items-center">
-                      <img src="../assets/images/icons/ic_video.svg"
+                      <img src="${videoIcon}"
                         alt="video-icon"
                         class="w-24p h-24p me-3">
                       <p>${list[4].name}</p>
