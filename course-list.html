@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <script type="module" crossorigin src="/web-layout-week8/assets/course-list-11dbec2f.js"></script>
-    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/main-b8e2cc44.js">
-    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/grid-4a160750.js">
-    <link rel="stylesheet" href="/web-layout-week8/assets/main-657a317a.css">
+    <script type="module" crossorigin src="/web-layout-week8/assets/course-list-06e35b09.js"></script>
+    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/main-1889c2e6.js">
+    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/header-ab63ecdc.js">
+    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/autoplay-c8588d60.js">
+    <link rel="modulepreload" crossorigin href="/web-layout-week8/assets/grid-625f57e3.js">
+    <link rel="stylesheet" href="/web-layout-week8/assets/main-3060df78.css">
   </head>
-  <body>
-    <header class="header py-3 pt-lg-10 pb-lg-4">
+  <body class="pt-16 pt-lg-0">
+    <header class="header py-3 pt-lg-10 pb-lg-4 position-fixed top-0 start-0 end-0
+  z-fixed position-lg-static bg-light">
   <nav class="navbar navbar-expand-lg py-0">
     <div class="container-lg">
       <div class="header__inner d-flex justify-content-between align-items-center w-100 py-lg-4 px-lg-10">
@@ -161,9 +164,10 @@
             <label for="nav-search" class="position-absolute top-50 translate-middle-y">
               <span class="material-symbols-outlined">search</span>
             </label>
-            <input type="text" id="nav-search" class="form-control ps-10 d-none d-lg-block"
+            <input type="search" id="nav-search" class="form-control ps-10 d-none d-lg-block"
               placeholder="搜尋各種音樂、數學、程式及設計課程">
-            <button class="btn btn-primary btn-sm position-absolute top-50 translate-middle-y">
+            <button class="btn btn-primary btn-sm position-absolute top-50 translate-middle-y"
+              type="button">
               搜尋
             </button>
           </div>
@@ -173,63 +177,246 @@
             <a href="#" class="py-2 px-3 d-block" data-bs-toggle="dropdown">
               <div class="position-relative">
                 <span class="material-symbols-outlined">notifications</span>
-                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle d-none">
+                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle ">
                   <span class="visually-hidden">New alerts</span>
                 </span>
               </div>
             </a>
-            <ul class="dropdown-menu d-none">
-              <li class="dropdown-header text-end text-primary">
-                <p>
-                  <span class="material-symbols-rounded">check_circle</span>
-                  全部標記為已讀
-                </p>
-              </li>
-            </ul>
+            <div class="dropdown-menu rounded-45 py-0 overflow-hidden
+              ">
+              <div class="dropdown-header text-end text-primary border-bottom">
+                <span class="material-symbols-rounded">check_circle</span>
+                全部標記為已讀
+              </div>
+              <ul class="list-unstyled m-0">
+                <li class="border-bottom bg-gray-10-hover">
+                  <a href="#" class="d-flex align-items-center py-3 px-4">
+                    <div class="w-40p h-40p rounded-circle d-flex align-items-center justify-content-center
+                      flex-shrink-0 bg-info-10 me-4">
+                      <span class="material-symbols-rounded text-info">brand_awareness</span>
+                    </div>
+                    <div>
+                      <p class="mb-1">系統通知：6 月 30 日 02:00 網站系統排程更新</p>
+                      <p class="text-gray-60">4 天前</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="border-bottom bg-gray-10-hover">
+                  <a href="#" class="d-flex align-items-center py-3 px-4">
+                    <div class="w-40p h-40p rounded-circle d-flex align-items-center justify-content-center
+                      flex-shrink-0 bg-alert-10 me-4">
+                      <span class="material-symbols-rounded text-alert">notifications_active</span>
+                    </div>
+                    <div>
+                      <p class="mb-1">募資開課：您購買的募資課程已成功開課！將於 3 天後公布課...</p>
+                      <p class="text-gray-60">7 天前</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="border-bottom bg-gray-10-hover">
+                  <a href="#" class="d-flex align-items-center py-3 px-4">
+                    <div class="w-40p h-40p rounded-circle d-flex align-items-center justify-content-center
+                      flex-shrink-0 bg-alert-10 me-4">
+                      <span class="material-symbols-rounded text-alert">notifications_active</span>
+                    </div>
+                    <div>
+                      <p class="mb-1">募資開課：您購買的募資課程已成功開課！將於 3 天後公布課...</p>
+                      <p class="text-gray-60">7 天前</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <a href="#" class="py-2 px-3 me-lg-4">
+          <a href="order-confirm.html" class="py-2 px-3 me-lg-4">
             <div class="position-relative">      
               <span class="material-symbols-outlined">shopping_cart</span>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary
-                d-none">
+                ">
                 2
                 <span class="visually-hidden">unread messages</span>
               </span>
             </div>
           </a>
-          <a href="#" class="btn btn-primary d-none
-            d-lg-block">
+          <a href="login.html" class="btn btn-primary d-none
+            ">
             登入/註冊
           </a>
-          <a class="avatar d-none "
-            href="#"
-            role="button"
-            aria-expanded="false">
-            <img class="avatar-img avatar-img-lg object-fit-cover mr-1"
-              src="/web-layout-week8/assets/avatar-1-cf59f6fa.png"
-              alt="avatar-1-img">
-            <p class="avatar-title avatar-title-bold">Kelly Hsu</p>
-          </a>
-          <a href="#phoneMenu" class="py-2 px-3 d-lg-none"  data-bs-toggle="offcanvas">    
-            <span class="material-symbols-rounded">menu</span>
-          </a>
-          <div class="header__menuList-phone d-lg-none offcanvas offcanvas-start pt-4 px-6" tabindex="-1" id="phoneMenu" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header py-3 pe-3 ps-6 mb-2" data-phone-header>
-              <h3 class="offcanvas-title title">探索全部</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body p-0">
-              <ul class="list-unstyled" data-phone-menu>
+          <div class="dropdown dropdow-member d-none d-lg-block">
+            <a class="avatar d-flex"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false">
+              <img class="avatar-img avatar-img-lg object-fit-cover mr-1"
+                src="/web-layout-week8/assets/avatar-1-cf59f6fa.png"
+                alt="avatar-1-img">
+              <p class="avatar-title avatar-title-bold">Kelly Hsu</p>
+            </a>
+            <div class="dropdown-menu rounded-45 py-2 px-3 overflow-hidden
+              ">
+              <div class="dropdown-header border-bottom">
+                <div class="d-flex align-items-center">
+                  <img src="/web-layout-week8/assets/avatar-1-cf59f6fa.png" width="44" height="44"
+                    alt="avatar-1.png"
+                    class="flex-shrink-0 me-2">
+                  <div>
+                    <h3 class="fs-7 fw-semibold">Jessica</h3>
+                    <p class="fs-8 text-gray-60">學習初心者</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-unstyled py-4 border-bottom">
                 <li>
-                  <a href="#second-menu" class="dropdown-item">
-                    音樂
-                    <span class="material-symbols-outlined">chevron_right</span>
+                  <a href="my-course.html"
+                    class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                    <span class="material-symbols-rounded me-2 fs-5">
+                      account_circle
+                    </span>
+                    個人檔案
+                  </a>
+                </li>
+                <li>
+                  <a href="my-course.html"
+                    class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                    <span class="material-symbols-rounded me-2 fs-5">
+                      bookmark
+                    </span>
+                    我的收藏
+                  </a>
+                </li>
+                <li>
+                  <a href="my-course.html"
+                    class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                    <span class="material-symbols-rounded me-2 fs-5">
+                      settings
+                    </span>
+                    帳號設定
                   </a>
                 </li>
               </ul>
+              <ul class="list-unstyled py-4 border-bottom">
+                <li>
+                  <a href="my-course.html"
+                    class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                    <span class="material-symbols-outlined me-2 fs-5">
+                      list_alt
+                    </span>
+                    訂單紀錄
+                  </a>
+                </li>
+                <li>
+                  <a href="my-course.html"
+                    class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                    <span class="material-symbols-outlined me-2 fs-5">
+                      edit
+                    </span>
+                    作業成果
+                  </a>
+                </li>
+              </ul>
+              <a href="my-course.html"
+                class="dropdown-item text-light-hover justify-content-start text-gray-80">
+                <span class="material-symbols-outlined me-2 fs-5">
+                  logout
+                </span>
+                登出
+              </a>
             </div>
-            <div class="position-absoulute py-3 ">
-              <a href="#" class="btn btn-primary w-100">
+          </div>
+          <a href="#phoneMenu" class="py-2 px-3 d-lg-none" data-bs-toggle="offcanvas">    
+            <span class="material-symbols-rounded">menu</span>
+          </a>
+          <div class="header__menuList-phone d-lg-none offcanvas offcanvas-start pt-4" tabindex="-1" id="phoneMenu" aria-labelledby="offcanvasExampleLabel">
+            <ul class="nav text-gray-80 border-bottom ">
+              <li class="w-50">
+                <a href="#" class="nav-link fs-md-7 text-center active"
+                  data-login-button>
+                  探索
+                </a>
+              </li>
+              <li class="w-50">
+                <a href="#" class="nav-link fs-md-7 text-center"
+                  data-login-button>
+                  我的會員
+                </a>
+              </li>
+            </ul>
+            <div class="px-6" data-login-section>
+              <div class="offcanvas-header py-3 pe-3 ps-6 mb-2 border-bottom" data-phone-header>
+                <h3 class="offcanvas-title title">探索全部</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body p-0">
+                <ul class="list-unstyled" data-phone-menu>
+                  <li>
+                    <a href="#second-menu" class="dropdown-item">
+                      音樂
+                      <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-none" data-login-section>
+              <div class="px-6">
+                <div class="offcanvas-header py-4 border-bottom" data-phone-header>
+                  <div class="d-flex align-items-center">
+                    <img src="/web-layout-week8/assets/avatar-1-cf59f6fa.png" width="44" height="44"
+                      alt="avatar-1.png"
+                      class="flex-shrink-0 me-2">
+                    <div>
+                      <h3 class="fs-7 fw-semibold">Jessica</h3>
+                      <p class="fs-8 text-gray-60">學習初心者</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offcanvas-body p-0">
+                  <ul class="list-unstyled py-4 border-bottom">
+                    <li>
+                      <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                        <span class="material-symbols-rounded text-gray-60 me-2 fs-5">account_circle</span>
+                        個人檔案
+                      </a>
+                    </li>
+                    <li>
+                      <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                        <span class="material-symbols-rounded text-gray-60 me-2 fs-5">bookmark</span>
+                        我的收藏
+                      </a>
+                    </li>
+                    <li>
+                      <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                        <span class="material-symbols-rounded text-gray-60 me-2 fs-5">settings</span>
+                        帳號設定
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled py-4 border-bottom">
+                    <li>
+                      <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                        <span class="material-symbols-outlined text-gray-60 me-2 fs-5">list_alt</span>
+                        訂單紀錄
+                      </a>
+                    </li>
+                    <li>
+                      <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                        <span class="material-symbols-outlined text-gray-60 me-2 fs-5">edit</span>
+                        作業成果
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="position-absolute start-0 bottom-0 py-3 px-6 border-top w-100">
+                <a href="my-course.html" class="dropdown-item justify-content-start text-gray-80">
+                  <span class="material-symbols-outlined text-gray-60 me-2 fs-5">logout</span>
+                  登出
+                </a>
+              </div>
+            </div>
+            <div class="position-absoulute start-0 bottom-0 px-6 py-3 d-none">
+              <a href="login.html" class="btn btn-primary w-100">
                 登入/註冊
               </a>
             </div>
@@ -315,7 +502,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="/web-layout-week8/assets/course-4-e273136f.png"
                       class="card-img-top"
@@ -354,7 +541,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="/web-layout-week8/assets/course-5-18abd620.png"
                       class="card-img-top"
@@ -393,7 +580,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="/web-layout-week8/assets/course-6-cb21fd70.png"
                       class="card-img-top"
@@ -432,7 +619,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="/web-layout-week8/assets/course-7-9e3876e4.png"
                       class="card-img-top"
@@ -468,7 +655,7 @@
               </div>
               <div class="swiper-slide">
                  <div class="card cardCourseBuy h-100">
-                  <a href="#" class="stretched-link"></a>
+                  <a href="course-content.html" class="stretched-link"></a>
                   <div class="position-relative overflow-hidden">
                     <img src="/web-layout-week8/assets/course-8-651d7ef2.png"
                       class="card-img-top"
@@ -588,7 +775,7 @@
           <ul class="row list-unstyled gy-4">
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="/web-layout-week8/assets/teacher-4-a7252308.png"
                     class="card-img-top" alt="teacher-4-image">
@@ -609,7 +796,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="/web-layout-week8/assets/teacher-5-08bd2b24.png"
                     class="card-img-top" alt="teacher-5-image">
@@ -630,7 +817,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="/web-layout-week8/assets/teacher-6-82c378a8.png"
                     class="card-img-top" alt="teacher-6-image">
@@ -651,7 +838,7 @@
             </li>
             <li class="col-md-6 col-lg-3">
               <div class="card cardTeacherImage position-relative">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-teacher.html" class="stretched-link"></a>
                 <div class="overflow-hidden">
                   <img src="/web-layout-week8/assets/teacher-7-90f5bc02.png"
                     class="card-img-top" alt="teacher-7-image">
@@ -732,7 +919,7 @@
           <ul class="row gy-6 list-unstyled mb-10 d-none d-md-flex" data-course-list-desk>
             <li class="col-md-4 col-lg-4 col-xl-3">
               <div class="card cardCourseBuy">
-                <a href="#" class="stretched-link"></a>
+                <a href="course-content.html" class="stretched-link"></a>
                 <div class="position-relative overflow-hidden">
                   <img src="/web-layout-week8/assets/course-4-e273136f.png"
                     class="card-img-top"

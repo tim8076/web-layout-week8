@@ -1,0 +1,1 @@
+import"./main-1889c2e6.js";import"./header-ab63ecdc.js";import{S as e,A as s}from"./autoplay-c8588d60.js";new e(".swiper-teacher-course",{modules:[s],slidesPerView:1.2,spaceBetween:24,loop:!0,autoplay:{delay:2500,disableOnInteraction:!1},breakpoints:{768:{slidesPerView:2.2},992:{slidesPerView:3},1296:{slidesPerView:4}}});

@@ -1,5 +1,6 @@
-import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid-4a160750.js";new a(".swiper-course-nav",{modules:[e],slidesPerView:"auto",spaceBetween:8,navigation:{nextEl:".swiper-button-next-nav"}});new a(".swiper-course-card",{modules:[e,i,t],slidesPerView:1.1,loop:!0,spaceBetween:24,autoplay:{delay:2500,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-prev-course",prevEl:".swiper-button-next-course"},breakpoints:{768:{slidesPerView:1.5},992:{slidesPerView:3},1320:{slidesPerView:4}}});new a(".swiper-hot",{modules:[e,l,i],slidesPerView:1.5,spaceBetween:24,loop:!0,autoplay:{delay:2500,disableOnInteraction:!1},pagination:{el:".swiper-pagination-hot",clickable:!0},navigation:{nextEl:".swiper-button-next-hot",prevEl:".swiper-button-prev-hot"},breakpoints:{768:{slidesPerView:3.5},992:{slidesPerView:6}}});new a(".swiper-category",{modules:[i,t],slidesPerView:1.2,spaceBetween:24,autoplay:{delay:2500,disableOnInteraction:!1},grid:{rows:2,fill:"row"},breakpoints:{768:{slidesPerView:2},992:{slidesPerView:2,grid:{rows:4,fill:"row"}}}});const d=document.querySelector("[data-course-list-phone]"),o=document.querySelector("[data-course-list-desk]");let r="";for(let s=0;s<10;s++)r+=`
-    <li class="cardCourse mb-6">
+import"./main-1889c2e6.js";import"./header-ab63ecdc.js";import{S as a,A as e}from"./autoplay-c8588d60.js";import{N as i,G as t,P as l}from"./grid-625f57e3.js";new a(".swiper-course-nav",{modules:[i],slidesPerView:"auto",spaceBetween:8,navigation:{nextEl:".swiper-button-next-nav"}});new a(".swiper-course-card",{modules:[i,e,t],slidesPerView:1.1,loop:!0,spaceBetween:24,autoplay:{delay:2500,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-prev-course",prevEl:".swiper-button-next-course"},breakpoints:{768:{slidesPerView:1.5},992:{slidesPerView:3},1320:{slidesPerView:4}}});new a(".swiper-hot",{modules:[i,l,e],slidesPerView:1.5,spaceBetween:24,loop:!0,autoplay:{delay:2500,disableOnInteraction:!1},pagination:{el:".swiper-pagination-hot",clickable:!0},navigation:{nextEl:".swiper-button-next-hot",prevEl:".swiper-button-prev-hot"},breakpoints:{768:{slidesPerView:3.5},992:{slidesPerView:6}}});new a(".swiper-category",{modules:[e,t],slidesPerView:1.2,spaceBetween:24,autoplay:{delay:2500,disableOnInteraction:!1},grid:{rows:2,fill:"row"},breakpoints:{768:{slidesPerView:2},992:{slidesPerView:2,grid:{rows:4,fill:"row"}}}});const o=document.querySelector("[data-course-list-phone]"),d=document.querySelector("[data-course-list-desk]");let r="";for(let s=0;s<10;s++)r+=`
+    <li class="cardCourse mb-6 position-relative">
+      <a href="course-content.html" class="stretched-link"></a>
       <div class="position-relative me-2 flex-shrink-0">
         <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
         <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
@@ -33,10 +34,10 @@ import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid
         </div>
       </div>
     </li>
-  `;d.innerHTML=r;let c="";for(let s=0;s<5;s++)c+=`
+  `;o.innerHTML=r;let c="";for(let s=0;s<5;s++)c+=`
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-4.png"
             class="card-img-top"
@@ -75,7 +76,7 @@ import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-5.png"
             class="card-img-top"
@@ -114,7 +115,7 @@ import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-6.png"
             class="card-img-top"
@@ -150,7 +151,7 @@ import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid
     </li>
     <li class="col-md-6 col-lg-4 col-xl-3">
       <div class="card cardCourseBuy">
-        <a href="#" class="stretched-link"></a>
+        <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
           <img src="../assets/images/course-7.png"
             class="card-img-top"
@@ -184,4 +185,4 @@ import"./main-b8e2cc44.js";import{S as a,N as e,A as i,G as t,P as l}from"./grid
         </div>
       </div>
     </li>
-  `;o.innerHTML=c;
+  `;d.innerHTML=c;
