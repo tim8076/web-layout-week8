@@ -105,6 +105,12 @@ const swiperCategory = new Swiper('.swiper-category', {
 // 卡片列表
 const cardListPhone = document.querySelector('[data-course-list-phone]');
 const cardListDesk = document.querySelector('[data-course-list-desk]');
+import imgCourse7 from '../images/teacher-7.png';
+import imgCourse6 from '../images/course-6.png';
+import imgCourse5 from '../images/course-5.png';
+import imgCourse4 from '../images/course-4.png';
+import imgAvatar2 from '../images/avatar-2.png';
+import imgIconStar from '../images/icons/ic_star.svg';
 
 let str = '';
 for(let i = 0; i < 10; i++) {
@@ -112,7 +118,7 @@ for(let i = 0; i < 10; i++) {
     <li class="cardCourse mb-6 position-relative">
       <a href="course-content.html" class="stretched-link"></a>
       <div class="position-relative me-2 flex-shrink-0">
-        <img class="cardCourse-img object-fit-cover" src="../assets/images/course-5.png" alt="course-5-img">
+        <img class="cardCourse-img object-fit-cover" src="${imgCourse5}" alt="course-5-img">
         <div class="cardCourse-tag position-absolute bg-alert-10 text-alert py-1 px-2 fw-normal fs-8 rounded-6">
           8 折
         </div>
@@ -122,7 +128,7 @@ for(let i = 0; i < 10; i++) {
         <div class="cardCourse-price mb-4">
           <div class="avatar">
             <img class="avatar-img object-fit-cover"
-              src="../assets/images/avatar-2.png"
+              src="${imgAvatar2}"
               alt="avatar-2-img">
             <h4 class="avatar-title">Kelly Hsu</h4>
           </div>
@@ -137,7 +143,7 @@ for(let i = 0; i < 10; i++) {
             <p>已有 420 位同學加入</p>
           </div>
           <div class="rate">
-            <img src="../assets/images/icons/ic_star.svg" alt="icon-star">
+            <img src="${imgIconStar}" alt="icon-star">
             <p class="rate-text">4.0</p>
             <p class="rate-count">(333)</p>
           </div>
@@ -155,7 +161,7 @@ for(let i =0; i < 5; i++) {
       <div class="card cardCourseBuy">
         <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
-          <img src="../assets/images/course-4.png"
+          <img src="${imgCourse4}"
             class="card-img-top"
             alt="course-4-img">
           <div class="position-absolute tag tag-alert fw-semibold">
@@ -167,7 +173,7 @@ for(let i =0; i < 5; i++) {
           <div class="d-flex justify-content-between align-items-center">
             <div class="avatar mb-6">
               <img class="avatar-img object-fit-cover"
-                src="../assets/images/avatar-2.png"
+                src="${imgAvatar2}"
                 alt="avatar-2-img">
               <h3 class="avatar-title">Kelly Hsu</h3>
             </div>
@@ -183,7 +189,7 @@ for(let i =0; i < 5; i++) {
             <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
           </div>
           <div class="rate">
-            <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+            <img class="rate-star" src="${imgIconStar}" alt="icon-star">
             <p class="rate-text">4.0</p>
             <p class="rate-count">(333)</p>
           </div>
@@ -194,7 +200,7 @@ for(let i =0; i < 5; i++) {
       <div class="card cardCourseBuy">
         <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
-          <img src="../assets/images/course-5.png"
+          <img src="${imgCourse5}"
             class="card-img-top"
             alt="course-5-img">
           <div class="position-absolute tag tag-alert fw-semibold">
@@ -206,7 +212,7 @@ for(let i =0; i < 5; i++) {
           <div class="d-flex justify-content-between align-items-center">
             <div class="avatar mb-6">
               <img class="avatar-img object-fit-cover"
-                src="../assets/images/avatar-2.png"
+                src="${imgAvatar2}"
                 alt="avatar-2-img">
               <h3 class="avatar-title">Kelly Hsu</h3>
             </div>
@@ -222,7 +228,7 @@ for(let i =0; i < 5; i++) {
             <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
           </div>
           <div class="rate">
-            <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+            <img class="rate-star" src="${imgIconStar}" alt="icon-star">
             <p class="rate-text">4.0</p>
             <p class="rate-count">(333)</p>
           </div>
@@ -233,7 +239,7 @@ for(let i =0; i < 5; i++) {
       <div class="card cardCourseBuy">
         <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
-          <img src="../assets/images/course-6.png"
+          <img src="${imgCourse6}"
             class="card-img-top"
             alt="course-6-img">
         </div>
@@ -242,7 +248,7 @@ for(let i =0; i < 5; i++) {
           <div class="d-flex justify-content-between align-items-center">
             <div class="avatar mb-6">
               <img class="avatar-img object-fit-cover"
-                src="../assets/images/avatar-2.png"
+                src="${imgAvatar2}"
                 alt="avatar-2-img">
               <h3 class="avatar-title">Kelly Hsu</h3>
             </div>
@@ -258,7 +264,7 @@ for(let i =0; i < 5; i++) {
             <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
           </div>
           <div class="rate">
-            <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+            <img class="rate-star" src="${imgIconStar}" alt="icon-star">
             <p class="rate-text">4.0</p>
             <p class="rate-count">(333)</p>
           </div>
@@ -269,7 +275,7 @@ for(let i =0; i < 5; i++) {
       <div class="card cardCourseBuy">
         <a href="course-content.html" class="stretched-link"></a>
         <div class="position-relative overflow-hidden">
-          <img src="../assets/images/course-7.png"
+          <img src="${imgCourse7}"
             class="card-img-top"
             alt="course-7-img">
         </div>
@@ -278,7 +284,7 @@ for(let i =0; i < 5; i++) {
           <div class="d-flex justify-content-between align-items-center">
             <div class="avatar mb-6">
               <img class="avatar-img object-fit-cover"
-                src="../assets/images/avatar-2.png"
+                src="${imgAvatar2}"
                 alt="avatar-2-img">
               <h3 class="avatar-title">Kelly Hsu</h3>
             </div>
@@ -294,7 +300,7 @@ for(let i =0; i < 5; i++) {
             <p class="text-gray-80 fs-8">已有 420 位同學加入</p>
           </div>
           <div class="rate">
-            <img class="rate-star" src="../assets/images/icons/ic_star.svg" alt="icon-star">
+            <img class="rate-star" src="${imgIconStar}" alt="icon-star">
             <p class="rate-text">4.0</p>
             <p class="rate-count">(333)</p>
           </div>
